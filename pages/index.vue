@@ -19,7 +19,7 @@
     </section>
     <section class="front-service inner section">
       <div class="">
-        <h2 class="front-headline2  md:text-7xl text-5xl leading-loose" data-text="Serviec">SERVICE</h2>
+        <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Serviec">SERVICE</h2>
       </div>
       <Service/>
       <nuxt-link to="/service" class="button trans">
