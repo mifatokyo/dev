@@ -563,8 +563,6 @@ body.noscroll {
   font-family: 'Nsans';
   font-weight: 600;
   color: #222;
-  mix-blend-mode: exclusion;
-  filter: invert(100%) grayscale(100%) contrast(100);
   right: 0;
 }
 

@@ -9,7 +9,7 @@
         <li v-for="content in contents" :key="content.id" class="blog-item">
           <nuxt-link :to="`/${content.id}`">
             <div class="post-image">
-              <span class="text-white text-xs font-semibold category sample">{{ content.categories }}</span>
+              <span class="text-white text-xs font-semibold category sample">{{ content.category }}</span>
               <img :src="content.thumbnail.url" alt="">
             </div>
             <div class="post-text">
