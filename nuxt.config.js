@@ -44,6 +44,7 @@ export default {
     '@nuxtjs/pwa',
     '@nuxtjs/style-resources',
     'nuxt-webfontloader',
+    'nuxt-fontawesome',
   ],
   styleResources: {
     scss: [

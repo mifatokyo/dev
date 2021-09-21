@@ -107,7 +107,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: inherit;
   font-weight: 900;
   margin: 0;
 }
@@ -563,6 +562,18 @@ body.noscroll {
   right: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .header-nav {
+    mix-blend-mode: unset;
+    filter: none;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+    padding: .8em 0 .6em;
+  }
+}
+
 .header-nav_item:hover {
   color: #FF8E3C;
   transform: scale(1.1);
@@ -571,6 +582,59 @@ body.noscroll {
 .header-nav_item:hover::first-letter {
   transform: scale(1.1);
   color: #FF8E3C;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav_item {
+    width: 100%;
+    font-size: 2vw;
+    text-align: center;
+    color: #222;
+  }
+  .header-nav_item p {
+    margin: .4em 0 0;
+  }
+  .header-nav_item.home {
+    order: 3;
+  }
+  .header-nav_item.service {
+    order: 1;
+  }
+  .header-nav_item.works {
+    order: 2;
+  }
+  .header-nav_item.blog {
+    order: 4;
+  }
+  .header-nav_item.contact {
+    order: 5;
+  }
+}
+
+.header-nav_item .icon {
+  font-size: 5vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav_item.nuxt-link-exact-active {
+    color: #FF8E3C;
+    transform: scale(1.15);
+    position: relative;
+  }
+  .header-nav_item.nuxt-link-exact-active:before {
+    content: '';
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: -40%;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -3;
+  }
 }
 
 .footer .waves {

@@ -44,11 +44,3 @@
     </div>
   </div>
 </template>
-
-<style scoped lang="scss">
-  body{
-    p{
-      display: block;
-    }
-  }
-</style>

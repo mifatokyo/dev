@@ -52,7 +52,24 @@ export default ({
           link: 'https://d-s-c.jp/',
           image: require('@/assets/images/works/dsc.png')
         },
-
+        {
+          id: 3 ,
+          category: 'WEB DESIGN' ,
+          title: '××様のコーポレートサイト1',
+          description:'あああああああああああああああああああああああああああああああ',
+          charge:'Design / Coding',
+          link: 'https://google.com',
+          image: require('@/assets/images/works/sample3.png')
+        },
+        {
+          id: 4 ,
+          category: 'WEB DESIGN' ,
+          title: '××様のコーポレートサイト1',
+          description:'あああああああああああああああああああああああああああああああ',
+          charge:'Design / Coding',
+          link: 'https://google.com',
+          image: require('@/assets/images/works/sample4.png')
+        },
       ],
     }
   },
