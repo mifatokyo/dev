@@ -34,6 +34,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,6 +51,9 @@ export default {
     scss: [
       '~/assets/scss/style.scss'
     ]
+  },
+  googleAnalytics: {
+    id: 'G-XTSN9TESN4'
   },
   webfontloader: {
     google: {

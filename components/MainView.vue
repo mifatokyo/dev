@@ -1,6 +1,6 @@
 <template>
   <div class="mainview">
-    <div class="mainview-text">
+    <div class="mainview-text flex item-center">
       <div class="">
         <p class="key md:text-5xl text-3xl p-2.5 font-nsans">
           <b>Sample <br>Headline Text</b>

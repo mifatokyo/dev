@@ -5,9 +5,10 @@
         <div class="works-image bg-black trans">
           <img :src="item.image" :alt="item.title" class="trans">
           <span class="outside text-white inset-0 flex justify-center items-center trans">
-<i class="fas fa-external-link-alt"></i>
-<fa icon="external-link-alt" />
-            <p>Open Web Site</p>
+            <div>
+              <font-awesome-icon :icon="['fas', 'external-link-alt']" class="md:block hidden icon text-3xl"/>
+              <p>Open Web Site</p>
+            </div>
           </span>
         </div>
         <div class="works-text ease-in-out trans">
