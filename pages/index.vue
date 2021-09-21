@@ -58,8 +58,7 @@
           <p>お気軽にお問い合わせください。</p>
         </div>
         <div class="front-contact">
-          <template v-if="!finished">
-            <form name="contact" method="POST" class="front-contact_form" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form name="contact" method="POST" class="front-contact_form"  data-netlify-honeypot="bot-field" netlify>
               <input type="hidden" name="mifaform" :value="contact" />
               <div class="p-2.5">
                 <p>
@@ -91,11 +90,7 @@
               </div>
               <button type="submit" class="font-nsans btn">SEND</button>
             </form>
-          </template>
-          <template v-else>
-            <p>お問い合わせ頂きありがとうございました。</p>
-            <nuxt-link to="/">HOME</nuxt-link>
-          </template>
+
         </div>
       </div>
     </section>
