@@ -1,0 +1,77 @@
+<template>
+  <div>
+    <div class="works-list grid grid-cols-1 md:grid-cols-2">
+      <a v-for="item in works" :key="item.id"  :href="item.link" target="_blank" rel="noopener noreferrer" class="works-item link text-sm text-blue-800">
+        <div class="works-image bg-black trans">
+          <img :src="item.image" :alt="item.title" class="trans">
+          <span class="outside text-white inset-0 flex justify-center items-center trans">
+<i class="fas fa-external-link-alt"></i>
+<fa icon="external-link-alt" />
+            <p>Open Web Site</p>
+          </span>
+        </div>
+        <div class="works-text ease-in-out trans">
+          <span class="inline-block text-white text-sm font-semibold p-2.5 bg-black category">
+            <p>{{ item.category }}</p>
+          </span>
+          <span class="block text-gray-900">
+            <h2 class="inline-block title font-semibold text-xl p-2.5 bg-white bg-opacity-100">{{ item.title }}</h2>
+          </span>
+          <div class="p-2.5">
+            <p class="description text-sm text-gray-900">{{ item.description }}</p>
+            <p class="charge text-sm text-gray-400">{{ item.charge }}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</template>
+
+<script>
+
+export default ({
+  data () {
+    return{
+      works: [
+        {
+          id: 1 ,
+          category: 'WEB SITE' ,
+          title: 'SuburbsRecords WEB SITE',
+          description:'音楽を中心としたイベントやトータルデザイン、レコーディングを行うクリエイター集団[ SuburbsRecords ]様のホームページを制作しました。',
+          charge:'Coding',
+          link: 'https://suburbsrecords.com/',
+          image: require('@/assets/images/works/suburbsrecords.jpg')
+        },
+        {
+          id: 2 ,
+          category: 'WEB SITE' ,
+          title: 'DSC LLC. CORPORATE SITE',
+          description:'通販コンサルタントのDSC合同会社様のホームページリニューアルを行いました。',
+          charge:'Design / Coding',
+          link: 'https://d-s-c.jp/',
+          image: require('@/assets/images/works/dsc.png')
+        },
+        {
+          id: 3 ,
+          category: 'WEB DESIGN' ,
+          title: '××様のコーポレートサイト1',
+          description:'あああああああああああああああああああああああああああああああ',
+          charge:'Design / Coding',
+          link: 'https://google.com',
+          image: require('@/assets/images/works/sample3.png')
+        },
+        {
+          id: 4 ,
+          category: 'WEB DESIGN' ,
+          title: '××様のコーポレートサイト1',
+          description:'あああああああああああああああああああああああああああああああ',
+          charge:'Design / Coding',
+          link: 'https://google.com',
+          image: require('@/assets/images/works/sample4.png')
+        },
+      ],
+    }
+  },
+})
+</script>
