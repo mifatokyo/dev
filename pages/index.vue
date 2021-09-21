@@ -81,7 +81,7 @@
                   <label>お問い合わせ内容<span class="mandatory">*</span></label>
                 </p>
                 <div>
-                  <textarea¥ name="message" placeholder="Please enter a message..."></textarea¥>
+                  <textarea name="message" placeholder="Please enter a message..."></textarea>
                 </div>
               </div>
               <div v-show="false" class="p-contact__item">
