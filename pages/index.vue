@@ -59,14 +59,14 @@
         </div>
         <div class="front-contact">
           <template v-if="!finished">
-            <form name="contact" method="POST" class="front-contact_form" :class="sendingClass" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="onSubmit">
-              <input type="hidden" name="form-name" :value="contact" />
+            <form name="contact" method="POST" class="front-contact_form" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="mifaform" :value="contact" />
               <div class="p-2.5">
                 <p>
                   <label>お名前<span class="mandatory">*</span></label>
                 </p>
                 <div>
-                  <input v-model="name" type="text" name="name" autocomplete="name" placeholder="Your Name">
+                  <input type="text" name="name" autocomplete="name" placeholder="Your Name">
                 </div>
               </div>
               <div class="p-2.5">
@@ -74,7 +74,7 @@
                   <label>メールアドレス<span class="mandatory">*</span></label>
                 </p>
                 <div>
-                  <input v-model="email" type="email" name="email" autocomplete="email" placeholder="E-mail Address">
+                  <input type="email" name="email" autocomplete="email" placeholder="E-mail Address">
                 </div>
               </div>
               <div class="p-2.5">
@@ -82,12 +82,12 @@
                   <label>お問い合わせ内容<span class="mandatory">*</span></label>
                 </p>
                 <div>
-                  <textarea v-model="message" name="message" placeholder="Please enter a message..."></textarea>
+                  <textarea¥ name="message" placeholder="Please enter a message..."></textarea¥>
                 </div>
               </div>
               <div v-show="false" class="p-contact__item">
                 <label for="message">スパムでない場合は空欄</label>
-                <input v-model="botField" type="text" name="bot-field"/>
+                <input type="text" name="bot-field"/>
               </div>
               <button type="submit" class="font-nsans btn">SEND</button>
             </form>
