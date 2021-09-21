@@ -59,7 +59,7 @@
         </div>
         <div class="front-contact">
             <form name="contact" method="POST" class="front-contact_form"  data-netlify-honeypot="bot-field" netlify>
-              <input type="hidden" name="mifaform" :value="contact" />
+              <input type="hidden" name="mifaform" value="contact" />
               <div class="p-2.5">
                 <p>
                   <label>お名前<span class="mandatory">*</span></label>
