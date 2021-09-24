@@ -22,7 +22,7 @@
         <li></li>
       </ul>
       <p class="copyright text-xs p-6 text-center">
-        <small>&copy;2021 mifa.tokyo</small>
+        <small>Copyright mifa.tokyo All Right Reserved.</small>
       </p>
     </div>
   </footer>

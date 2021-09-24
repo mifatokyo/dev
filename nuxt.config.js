@@ -47,6 +47,11 @@ export default {
     '@nuxtjs/style-resources',
     'nuxt-webfontloader',
     'nuxt-fontawesome',
+    // '@nuxtjs/google-gtag',
+    //   {
+    //     id: 'G-XTSN9TESN4',
+    //     debug: true
+    //   }
   ],
   styleResources: {
     scss: [

@@ -272,7 +272,6 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-  border-style: none;
   padding: 0;
 }
 
@@ -440,6 +439,48 @@ th {
 /* = = = = = = = = = = = = = = = =
 // SETTING BREAKPOINTS
  = = = = = = = = = = = = = = = = */
+/* = = = = = = = = = = = = = = = =
+// All page common styles
+ = = = = = = = = = = = = = = = = */
+body {
+  font-family: 'Nunito Sans',"Yu Gothic", "游ゴシック", 'YuGothic', "游ゴシック体", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  border-top: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.6;
+  overflow-x: hidden;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+.wrap {
+  overflow-x: hidden;
+}
+
+.inner {
+  max-width: 960px;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .inner {
+    max-width: 92%;
+  }
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 4rem 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #__layout {
     overflow-x: hidden;
@@ -456,6 +497,14 @@ th {
 
 .time {
   display: block;
+}
+
+.list-hyphen {
+  margin: .4em 0;
+}
+
+.list-hyphen li:before {
+  content: ' - ';
 }
 
 .sacrset, .front-headline2:after, .layer-headline1:after {
@@ -485,6 +534,8 @@ th {
 .button:hover {
   background: #FF8E3C;
   color: #fff;
+  border-color: #FF8E3C;
+  box-shadow: 0 0 8px #FF8E3C;
 }
 
 .button:hover:before {
@@ -506,43 +557,9 @@ th {
   right: -2rem;
 }
 
-.wrap {
-  overflow-x: hidden;
-}
-
-.inner {
-  max-width: 960px;
-  margin: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .inner {
-    max-width: 92%;
-  }
-}
-
-.section {
-  padding: 6rem 0;
-}
-
-body {
-  font-family: "Yu Gothic", "游ゴシック", 'YuGothic', "游ゴシック体", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  border-top: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  line-height: 1.6;
-  overflow-x: hidden;
-  letter-spacing: 1px;
-  color: #222;
-}
-
-body.noscroll {
-  overflow: hidden;
-}
-
+/* = = = = = = = = = = = = = = = =
+// Header - unique styles
+ = = = = = = = = = = = = = = = = */
 .header {
   width: 100%;
 }
@@ -631,6 +648,9 @@ body.noscroll {
   }
 }
 
+/* = = = = = = = = = = = = = = = =
+// Footer - unique styles
+= = = = = = = = = = = = = = = = */
 .footer .waves {
   position: relative;
   width: 100%;
@@ -672,7 +692,6 @@ body.noscroll {
   }
 }
 
-/*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
     height: 40px;
@@ -683,6 +702,9 @@ body.noscroll {
   }
 }
 
+/* = = = = = = = = = = = = = = = =
+// Main View - unique styles
+ = = = = = = = = = = = = = = = = */
 .mainview {
   height: 100vh;
   position: relative;
@@ -711,7 +733,6 @@ body.noscroll {
   color: #222;
   position: absolute;
   top: 30%;
-  bottom: 40%;
   left: calc(50% - 40vw);
   mix-blend-mode: exclusion;
   filter: invert(100%) grayscale(100%) contrast(100);
@@ -727,13 +748,13 @@ body.noscroll {
 }
 
 .mainview-image {
-  width: 100%;
+  width: 70vw;
   height: 100%;
   position: absolute;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: -1;
-  background: url("~@/assets/images/front/mainview.png") center center/cover no-repeat;
+  background: url("~@/assets/images/front/mainview.jpg") 56% center/cover no-repeat;
 }
 
 .mainview-image img {
@@ -765,6 +786,9 @@ body.noscroll {
   animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
 }
 
+/* = = = = = = = = = = = = = = = =
+// Front page - unique styles
+ = = = = = = = = = = = = = = = = */
 .front-headline2 {
   color: transparent;
   display: block;
@@ -876,12 +900,20 @@ body.noscroll {
   text-decoration: underline;
 }
 
+.front-topics .topics-text .icon {
+  margin-left: .2em;
+}
+
 .front-works .works-item:nth-child(odd) {
   margin: 0 auto;
 }
 
 .front-works .works-item:nth-child(even) {
   margin: 4rem auto 0;
+}
+
+.front-works .works-item:nth-of-type(n+5) {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -898,6 +930,7 @@ body.noscroll {
 
 @media screen and (max-width: 768px) {
   .front-service .service-text {
+    margin-bottom: 6rem;
     width: 100%;
   }
 }
@@ -927,14 +960,25 @@ body.noscroll {
   font-family: 'Nsans';
 }
 
+.front-blog .blog-item:nth-of-type(n+4) {
+  display: none;
+}
+
 .front-contact_form input,
 .front-contact_form textarea {
-  border: 1px solid #222;
   background: #fff;
   max-width: 440px;
   max-height: 140px;
   width: 100%;
   padding: .2em .64em;
+  border-radius: .2em;
+  border: 1px solid #dadada;
+}
+
+.front-contact_form input:focus,
+.front-contact_form textarea:focus {
+  transform: scale(1.03);
+  box-shadow: 0 0 8px  #dadada;
 }
 
 .front-contact .btn {
@@ -945,6 +989,10 @@ body.noscroll {
   color: #fff;
   width: 100%;
   padding: 0.4em;
+}
+
+.front-contact .mandatory {
+  color: #FF8E3C;
 }
 
 .layer {
@@ -1012,6 +1060,9 @@ body.noscroll {
   z-index: -1;
 }
 
+/* = = = = = = = = = = = = = = = =
+// Work - unique styles
+ = = = = = = = = = = = = = = = = */
 .works-item {
   max-width: 440px;
   margin: 1.2rem auto;
@@ -1034,10 +1085,6 @@ body.noscroll {
   opacity: 1;
 }
 
-.works-item:hover .outside .icon {
-  margin: .4em auto;
-}
-
 .works-image {
   position: relative;
   z-index: -1;
@@ -1053,6 +1100,10 @@ body.noscroll {
   opacity: 0;
 }
 
+.works-image .outside .icon {
+  margin: .4em auto;
+}
+
 .works-text {
   margin-top: -4.6rem;
 }
@@ -1065,8 +1116,13 @@ body.noscroll {
   padding: .425rem 2rem;
 }
 
+.works-block_headline {
+  border-left: 6px solid #FF8E3C;
+  padding-left: .4em;
+}
+
 /* = = = = = = = = = = = = = = = =
-// BLOG STYLING
+// Blog - unique styles
  = = = = = = = = = = = = = = = = */
 .blog-list {
   margin: 2rem 0;
@@ -1150,10 +1206,17 @@ body.noscroll {
 
 .post-contents h2 {
   font-size: 1.5em;
+  border-bottom: 2px solid;
 }
 
 .post-contents h3 {
   font-size: 1.2em;
+  border-left: 4px dotted;
+  padding-left: .4em;
+}
+
+.post-sibling {
+  padding: 1em 0;
 }
 
 .breadcrumb {

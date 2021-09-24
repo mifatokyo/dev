@@ -10,7 +10,7 @@
           <h3 class="title font-semibold">{{ item.title }}</h3>
           <p class="description md:text-sm text-xs">{{ item.description }}</p>
           <a :href="item.link" class="link text-sm text-blue-800">
-            <p>{{ item.link }}</p>
+            <p v-if="item.link">{{ item.link }}<font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/></p>
           </a>
         </div>
       </li>
@@ -53,7 +53,7 @@ export default ({
           date: '2021.00.00' ,
           title: '〇〇様のコーポレートサイト4',
           description:'あああああああああああああああああああああああああああああああ',
-          link: 'https://google.com',
+          // link: 'https://google.com',
           image: require('@/assets/images/topics/sample4.png')
         },
       ],
