@@ -24,43 +24,40 @@ export default ({
   data () {
     return{
       list: [
-        {
-          id: 1 ,
-          date: '2021.00.00' ,
-          title: '〇〇様のコーポレートサイト1',
-          description:'あああああああああああああああああああああああああああああああ',
-          link: 'https://google.com',
-          image: require('@/assets/images/topics/sample1.png')
-        },
-        {
-          id: 2 ,
-          date: '2021.00.00' ,
-          title: '〇〇様のコーポレートサイト2',
-          description:'あああああああああああああああああああああああああああああああ',
-          link: 'https://google.com',
-          image: require('@/assets/images/topics/sample2.png')
-        },
+        // {
+        //   id: 4 ,
+        //   date: '2021.00.00' ,
+        //   title: '〇〇様のコーポレートサイト4',
+        //   description:'あああああああああああああああああああああああああああああああ',
+        //   // link: 'https://google.com',
+        //   image: require('@/assets/images/topics/sample4.png')
+        // },
         {
           id: 3 ,
-          date: '2021.00.00' ,
-          title: '〇〇様のコーポレートサイト3',
-          description:'あああああああああああああああああああああああああああああああ',
-          link: 'https://google.com',
+          date: '2021/10/4' ,
+          title: 'ブログ投稿を開始しました。',
+          description:'制作・開発に関することや、身の回りのことを定期的に発信していきます。',
+          link: '/Blog',
           image: require('@/assets/images/topics/sample3.png')
         },
         {
-          id: 4 ,
-          date: '2021.00.00' ,
-          title: '〇〇様のコーポレートサイト4',
-          description:'あああああああああああああああああああああああああああああああ',
+          id: 2 ,
+          date: '2021/10/1' ,
+          title: '納品事例を更新しました。',
+          description:'納品済みの2サイトを掲載しました。',
+          link: '/Works',
+          image: require('@/assets/images/topics/sample2.png')
+        },
+        {
+          id: 1 ,
+          date: '2021/9/30' ,
+          title: '《 mifa.tokyo 》を公開しました',
+          description:'個人活動用のサイトを制作・公開しました。',
           // link: 'https://google.com',
-          image: require('@/assets/images/topics/sample4.png')
+          image: require('@/assets/images/topics/sample1.png')
         },
       ],
-
     }
   },
-
-
 })
 </script>

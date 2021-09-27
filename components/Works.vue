@@ -16,7 +16,7 @@
             <p>{{ item.category }}</p>
           </span>
           <span class="block text-gray-900">
-            <h2 class="inline-block title font-semibold text-xl p-2.5 bg-white bg-opacity-100">{{ item.title }}</h2>
+            <h2 class="inline-block title font-extrabold text-xl p-2.5 bg-white bg-opacity-100">{{ item.title }}</h2>
           </span>
           <div class="p-2.5">
             <p class="description text-sm text-gray-900">{{ item.description }}</p>

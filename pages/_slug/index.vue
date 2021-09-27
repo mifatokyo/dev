@@ -25,12 +25,28 @@
       <section class="inner md:p-2.5 p-1">
         <div class="post-contents" v-html="contents"></div>
         <!-- 前後の記事 -->
-        <ul class="post-sibling grid grid-cols-2 text-sm">
-          <li v-if="prev">
-            <a :href="prev.id" rel="prev" class="post-sibling_paging _prev p-1.5">{{ prev.title }}</a>
+        <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">
+          <li v-if="prev" class="prev">
+            <a :href="prev.id" rel="prev" class="post-sibling_paging _prev p-1.5 link--arrowed">
+              <p>{{ prev.title }}</p>
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="none" stroke="#222" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                  <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                  <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                </g>
+              </svg>
+            </a>
           </li>
-          <li v-if="next">
-            <a :href="next.id" rel="next" class="post-sibling_paging _next p-1.5">{{ next.title }}</a>
+          <li v-if="next" class="next">
+            <a :href="next.id" rel="next" class="post-sibling_paging _next p-1.5 link--arrowed">
+              <p>{{ next.title }}</p>
+              <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <g fill="none" stroke="#222" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                  <circle class="arrow-icon--circle" cx="16" cy="16" r="15.12"></circle>
+                  <path class="arrow-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                </g>
+              </svg>
+            </a>
           </li>
         </ul>
       </section>

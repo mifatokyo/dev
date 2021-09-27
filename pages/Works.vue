@@ -11,6 +11,19 @@
         </div>
         <Works/>
       </section>
+      <section>
+        <div class="balloon flex justify-center">
+          <div class="icons">
+            <figure>
+              <img src="" alt="">
+            </figure>
+          </div>
+          <div class="speech md:p-4 p-2 text-xs rounded">
+            <p>こちらでは許可を頂いた制作物のみ掲載しています</p>
+            <p>どんな案件に携わったかなど少しお話しすることも可能ですので、お気軽にご連絡ください。</p>
+          </div>
+        </div>
+      </section>
     </main>
     <Footer/>
   </div>

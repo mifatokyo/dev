@@ -9,7 +9,7 @@
         <li v-for="content in contents" :key="content.id" class="blog-item">
           <nuxt-link :to="`/${content.id}`">
             <div class="post-image">
-              <span class="text-white text-xs font-semibold category sample">{{ content.category }}</span>
+              <span class="text-white text-xs font-semibold category sample">{{ content.category.name }}</span>
               <img :src="content.thumbnail.url" alt="">
             </div>
             <div class="post-text">
@@ -19,6 +19,19 @@
           </nuxt-link>
         </li>
       </ul>
+      <section>
+        <div class="balloon flex justify-center">
+          <div class="icons">
+            <figure>
+              <img src="" alt="">
+            </figure>
+          </div>
+          <div class="speech md:p-4 p-2 text-xs rounded">
+            <p>制作や、生活の中での気づきなどを書き留めています。</p>
+            <p>何か気になる点があれば、お気軽にご連絡ください。</p>
+          </div>
+        </div>
+      </section>
     </main>
     <Footer/>
   </div>
