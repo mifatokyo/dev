@@ -7,9 +7,12 @@
       <nuxt-link to="/Blog">BLOG</nuxt-link>
     </li>
     <li v-if="hasCategory(category)" class="breadcrumbList">
-      <nuxt-link :to="`/category/${category.id}/page/1`">{{
+      <!-- <nuxt-link :to="`/category/${category.id}/page/1`">{{
         category.name
-      }}</nuxt-link>
+      }}</nuxt-link> -->
+      <p>{{
+        category.name
+      }}</p>
     </li>
   </ul>
 </template>
