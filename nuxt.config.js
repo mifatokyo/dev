@@ -40,11 +40,6 @@ export default {
     '~/assets/scss/style.css',
 
   ],
-  script: [
-      {
-        src: 'main.js'
-      }
-    ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     // '~/plugins/vee-validate',
@@ -121,9 +116,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [
-      'vee-validate/dist/rules'
-      ],
   },
   vendor: [
     'vue-awesome-swiper'

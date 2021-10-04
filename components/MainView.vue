@@ -41,16 +41,16 @@
 export default {
   data() {
     return {
-      swiperOption: {
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        slidesPerView: 1,
-        loop: true,
-        effect: "fade",
-        speed: 2000,
-      },
+      // swiperOption: {
+      //   autoplay: {
+      //     delay: 2500,
+      //     disableOnInteraction: false,
+      //   },
+      //   slidesPerView: 1,
+      //   loop: true,
+      //   effect: "fade",
+      //   speed: 2000,
+      // },
     }
   },
 }
