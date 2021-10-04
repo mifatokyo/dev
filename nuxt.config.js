@@ -42,6 +42,7 @@ export default {
   ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    // '~/plugins/vee-validate',
     // { src: '~/plugins/swiper', mode: 'client' },
   ],
 
@@ -54,7 +55,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // '@nuxtjs/google-analytics',
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -66,20 +67,20 @@ export default {
     '@nuxtjs/style-resources',
     'nuxt-webfontloader',
     'nuxt-fontawesome',
-    // '@nuxtjs/google-gtag',
+    '@nuxtjs/google-gtag',
   ],
   styleResources: {
     scss: [
       '~/assets/scss/style.scss'
     ]
   },
-  // googleAnalytics: {
-  //   id: 'G-XTSN9TESN4'
-  // },
-  // 'google-gtag': {
-  //   id: 'G-XTSN9TESN4',
-  //   debug: true
-  // },
+  googleAnalytics: {
+    id: 'G-XTSN9TESN4'
+  },
+  'google-gtag': {
+    id: 'G-XTSN9TESN4',
+    debug: true
+  },
   webfontloader: {
     google: {
       families: [
@@ -112,11 +113,21 @@ export default {
       lang: 'ja'
     }
   },
-
+  hooks: {
+    generate: {
+      routeCreated({ errors }) {
+        if (errors.length > 0 && errors[0].error) {
+          // console.log(errors)
+          const error = errors[0].error
+          throw new Error(`Failed generate ${error.path} -- ${error.message}`)
+        }
+      },
+    },
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  // vendor: [
-  //   'vue-awesome-swiper'
-  // ]
+  vendor: [
+    'vue-awesome-swiper'
+  ]
 }
