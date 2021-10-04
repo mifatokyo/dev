@@ -53,9 +53,3 @@
 		},
   }
 </script>
-
-
-<style scoped>
-  body{
-  }
-</style>
