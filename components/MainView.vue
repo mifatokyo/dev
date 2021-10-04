@@ -205,8 +205,6 @@ export default {
     position: absolute;
     top: 30%;
     z-index: 10;
-    // bottom: 40%;
-    // left: calc(50% - 40vw);
     left: 0;
     right: 0;
     margin: auto;
@@ -218,7 +216,6 @@ export default {
       background: #fff;
     }
     .key{
-      // text-shadow: 2px 3px #ff8e3c;
     }
     .caption{
       margin-top: .6rem;
@@ -254,7 +251,6 @@ export default {
     right:0;
     top: 0;
     z-index: -1;
-    // background: url("~@/assets/images/front/mainview.jpg") 56% center /cover no-repeat;
     overflow: hidden;
     // aspect-ratio: 1 / 1;
     // border-radius: 50% 0 50% 50%;
