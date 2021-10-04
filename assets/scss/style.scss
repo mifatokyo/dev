@@ -651,30 +651,30 @@ body {
   }
 }
 .front{
-  // &-headline{
-  //   &2{
-  //     color:rgba(0,0,0,0);
-  //     display:block;
-  //     font-family: 'Nsans';
-  //     font-weight: 700;
-  //     opacity:1;
-  //     position:relative;
-  //     -webkit-text-stroke-color: #000;
-  //     -webkit-text-stroke-width: 1.5px;
-  //     text-shadow: 2px 3px $Org;
-  //     margin-bottom: 2rem;
-  //     &:after{
-  //       @extend .sacrset ;
-  //       font-size: 22rem;
-  //       top: -80%;
-  //       left: -4rem;
-  //       opacity: 0.2;
-  //       @include mq(){
-  //         font-size: 50vw;
-  //       }
-  //     }
-  //   }
-  // }
+  &-headline{
+    &2{
+      color:rgba(0,0,0,0);
+      display:block;
+      font-family: 'Nsans';
+      font-weight: 700;
+      opacity:1;
+      position:relative;
+      -webkit-text-stroke-color: #000;
+      -webkit-text-stroke-width: 1.5px;
+      text-shadow: 2px 3px $Org;
+      margin-bottom: 2rem;
+      &:after{
+        @extend .sacrset ;
+        font-size: 22rem;
+        top: -80%;
+        left: -4rem;
+        opacity: 0.2;
+        @include mq(){
+          font-size: 50vw;
+        }
+      }
+    }
+  }
   &-topics{
     .topics{
       &-item{
@@ -858,27 +858,28 @@ body {
     }
   }
 
-  // &-bg{
-  //   &:before{
-  //     content: '';
-  //     width: 180%;
-  //     height: 100%;
-  //     position: absolute;
-  //     // background: #f8f8f8;
-  //     background: #fffcf6;
-  //     transform: rotate(170deg);
-  //     top: -15%;
-  //     left: -20%;
-  //     right: 20%;
-  //     margin: auto;
-  //   }
-  //   &:last-of-type{
-  //     &:before{
-  //       top: 0;
-  //       transform: rotate(190deg);
-  //     }
-  //   }
-  // }
+  &-bg{
+    &:before{
+      content: '';
+      width: 180%;
+      height: 100%;
+      position: absolute;
+      // background: #f8f8f8;
+      background: #fffcf6;
+      transform: rotate(170deg);
+      top: -15%;
+      left: -20%;
+      right: 20%;
+      margin: auto;
+    }
+    &:last-of-type{
+      &:before{
+        top: 0;
+        left: -40%;
+        transform: rotate(190deg);
+      }
+    }
+  }
 }
 
 .layer{

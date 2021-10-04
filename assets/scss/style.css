@@ -509,7 +509,7 @@ body {
   content: ' - ';
 }
 
-.sacrset, .layer-headline1:after {
+.sacrset, .front-headline2:after, .layer-headline1:after {
   transform: rotate(-12deg);
   white-space: nowrap;
   font-family: 'Sacramento';
@@ -1154,6 +1154,32 @@ body {
   }
 }
 
+.front-headline2 {
+  color: transparent;
+  display: block;
+  font-family: 'Nsans';
+  font-weight: 700;
+  opacity: 1;
+  position: relative;
+  -webkit-text-stroke-color: #000;
+  -webkit-text-stroke-width: 1.5px;
+  text-shadow: 2px 3px #FF8E3C;
+  margin-bottom: 2rem;
+}
+
+.front-headline2:after {
+  font-size: 22rem;
+  top: -80%;
+  left: -4rem;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 768px) {
+  .front-headline2:after {
+    font-size: 50vw;
+  }
+}
+
 .front-topics .topics-item {
   max-width: 460px;
   margin: 1rem 0;
@@ -1350,6 +1376,25 @@ body {
 
 .front-contact .mandatory {
   color: #ff8e3c;
+}
+
+.front-bg:before {
+  content: '';
+  width: 180%;
+  height: 100%;
+  position: absolute;
+  background: #fffcf6;
+  transform: rotate(170deg);
+  top: -15%;
+  left: -20%;
+  right: 20%;
+  margin: auto;
+}
+
+.front-bg:last-of-type:before {
+  top: 0;
+  left: -40%;
+  transform: rotate(190deg);
 }
 
 .layer {
