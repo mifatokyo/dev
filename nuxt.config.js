@@ -54,7 +54,7 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/google-analytics',
+    // '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -66,20 +66,20 @@ export default {
     '@nuxtjs/style-resources',
     'nuxt-webfontloader',
     'nuxt-fontawesome',
-    '@nuxtjs/google-gtag',
+    // '@nuxtjs/google-gtag',
   ],
   styleResources: {
     scss: [
       '~/assets/scss/style.scss'
     ]
   },
-  googleAnalytics: {
-    id: 'G-XTSN9TESN4'
-  },
-  'google-gtag': {
-    id: 'G-XTSN9TESN4',
-    debug: true
-  },
+  // googleAnalytics: {
+  //   id: 'G-XTSN9TESN4'
+  // },
+  // 'google-gtag': {
+  //   id: 'G-XTSN9TESN4',
+  //   debug: true
+  // },
   webfontloader: {
     google: {
       families: [
@@ -116,7 +116,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  vendor: [
-    'vue-awesome-swiper'
-  ]
+  // vendor: [
+  //   'vue-awesome-swiper'
+  // ]
 }
