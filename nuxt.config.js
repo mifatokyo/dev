@@ -4,26 +4,51 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    htmlAttrs:{
+      lang: 'ja'
+    },
     title: 'mifa.tokyo | 東京を中心に活動するフリーランスWebデザイナー',
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      {
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: '/favicon.svg'
+      }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '~/assets/scss/style.css',
-  ],
 
+  ],
+  script: [
+      {
+        src: 'main.js'
+      }
+    ],
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/vee-validate'
+    '~/plugins/vee-validate',
+    { src: '~/plugins/swiper', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -47,11 +72,7 @@ export default {
     '@nuxtjs/style-resources',
     'nuxt-webfontloader',
     'nuxt-fontawesome',
-    // '@nuxtjs/google-gtag',
-    //   {
-    //     id: 'G-XTSN9TESN4',
-    //     debug: true
-    //   }
+    '@nuxtjs/google-gtag',
   ],
   styleResources: {
     scss: [
@@ -60,6 +81,10 @@ export default {
   },
   googleAnalytics: {
     id: 'G-XTSN9TESN4'
+  },
+  'google-gtag': {
+    id: 'G-XTSN9TESN4',
+    debug: true
   },
   webfontloader: {
     google: {
@@ -100,5 +125,7 @@ export default {
       'vee-validate/dist/rules'
       ],
   },
-
+  vendor: [
+    'vue-awesome-swiper'
+  ]
 }

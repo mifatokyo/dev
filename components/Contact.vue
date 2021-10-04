@@ -1,8 +1,8 @@
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="contact-text md:text-base text-sm p-2.5 md:mt-8">
-      <p>制作のご依頼やご相談、ご要望など<br>ご連絡は右のフォームよりお願いします。</p>
-      <p class="mb-4">1~2日以内に折り返しご連絡させて頂きます。</p>
+      <p class="mb-4">制作のご依頼やご相談、ご要望など<br>ご連絡は右のフォームよりお待ちしています。</p>
+      <p>1~2日以内に折り返しご連絡させて頂きます。</p>
       <p class="mb-4">是非、お気軽にお問い合わせください。</p>
     </div>
     <div class="front-contact">
@@ -41,3 +41,38 @@
     </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.front{
+  &-contact{
+    &_form{
+      input,
+      textarea{
+        // border: 1px solid $Kro;
+        background: #fff;
+        max-width: 440px;
+        max-height: 140px;
+        width: 100%;
+        padding: .2em .64em;
+        border: 1px solid #dadada;
+        &:focus{
+          transform: scale(1.03);
+          box-shadow:  0 0 8px  #dadada;
+          outline: royalblue;
+        }
+      }
+    }
+    .btn{
+      max-width: 240px;
+      display: block;
+      margin: 2rem auto;
+      background: $Kro;
+      color: #fff;
+      width: 100%;
+      padding: 0.4em;
+    }
+    .mandatory{
+      color: #ff8e3c;
+    }
+  }
+}
+</style>

@@ -3,7 +3,7 @@
     <nuxt-link class="header-logo p-4" to="/">
       <img src="../assets/images/mifa_logo.svg" alt="mifa tokyo">
     </nuxt-link>
-    <nav class="header-nav flex md:p-4 md:shadow-none shadow">
+    <nav class="header-nav flex md:p-4 md:shadow-none shadow" role="navigation" aria-label="メインメニュー">
       <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 home" active-class="link-active" to="/">
         <font-awesome-icon :icon="['fas', 'home']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="HOME">HOME</p>
