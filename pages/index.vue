@@ -75,8 +75,6 @@
   import Service from "@/components/FrontService.vue";
   import Works from '@/components/Works.vue';
   import Contact from '@/components/Contact.vue';
-  // import Blog from '@/components/Blog.vue';
-  // import Contact from '@/components/Contact.vue';
 
   export default {
     components: {
