@@ -7,7 +7,7 @@ export default {
     htmlAttrs:{
       lang: 'ja'
     },
-    title: 'mifa.tokyo | 東京を中心に活動するフリーランスWebデザイナー',
+    title: 'mifa | 東京を中心に活動するフリーランスWebデザイナー',
     meta: [
       {
         charset: 'utf-8'
