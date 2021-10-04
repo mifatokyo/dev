@@ -7,7 +7,7 @@ export default {
     htmlAttrs:{
       lang: 'ja'
     },
-    title: 'mifa | 東京を中心に活動するフリーランスWebデザイナー',
+    title: 'mifa.tokyo | 東京を中心に活動するフリーランスWebデザイナー',
     meta: [
       {
         charset: 'utf-8'
@@ -113,6 +113,13 @@ export default {
       lang: 'ja'
     }
   },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+    // transpile: [
+    //   'vee-validate/dist/rules'
+    //   ],
+  },
   hooks: {
     generate: {
       routeCreated({ errors }) {
@@ -124,10 +131,4 @@ export default {
       },
     },
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
-  vendor: [
-    'vue-awesome-swiper'
-  ]
 }

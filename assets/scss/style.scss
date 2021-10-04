@@ -474,12 +474,13 @@ body {
   filter: blur(1rem);
   z-index: -10;
   &._grd{
-    border-radius: 50% ;
-    background: #f09;
-    background-image: radial-gradient(#ff0000 0%, #ffc19a 50%, #ffc6e8 100%);
     width: 320px;
     height: 320px;
-    opacity: .4;
+    border-radius: 50% ;
+    background: #f09;
+    transform: rotate(45deg);
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    opacity: .8;
     @include mq(md){
       left: -10%;
       width: 240px;

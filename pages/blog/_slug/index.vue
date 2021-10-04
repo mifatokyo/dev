@@ -19,7 +19,7 @@
         </div>
       </section>
       <div class="inner">
-        <Breadcrumb :category="category" />
+        <!-- <Breadcrumb :category="category" /> -->
       </div>
       <section class="inner md:p-2.5 p-1">
         <div class="post-contents" v-html="contents"></div>
