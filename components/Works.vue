@@ -47,7 +47,7 @@ export default ({
           id: 2 ,
           category: 'WEB SITE' ,
           title: 'DSC LLC. CORPORATE SITE',
-          description:'通販コンサルタントのDSC合同会社様のホームページリニューアルを行いました。',
+          description:'通販コンサルタントの[ DSC合同会社 ]様のホームページリニューアルを行いました。',
           charge:'Design / Coding',
           link: 'https://d-s-c.jp/',
           image: require('@/assets/images/works/dsc.png')

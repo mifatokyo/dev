@@ -54,7 +54,7 @@ export default ({
           title: '《 mifa.tokyo 》を公開しました',
           description:'個人活動用のサイトを制作・公開しました。',
           // link: 'https://google.com',
-          image: require('@/assets/images/topics/sample1.png')
+          image: require('@/assets/images/topics/mifa-open.png')
         },
       ],
     }
