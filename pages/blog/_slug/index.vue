@@ -107,10 +107,12 @@ export default {
   },
   head() {
     return {
-      title: this.title,
+      title: this.title + ' | フリーランスウェブデザイナー mifa ' ,
       meta: [
-        { hid: 'description', name: 'description', content: this.description },
-        { hid: 'og:title', property: 'og:title', content: this.title },
+        {
+          hid: 'description', name: 'description', content: this.description },
+        {
+          hid: 'og:title', property: 'og:title', content: this.title },
         {
           hid: 'og:description',
           property: 'og:description',

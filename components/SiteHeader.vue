@@ -16,7 +16,7 @@
         <font-awesome-icon :icon="['fas', 'code-branch']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="WORKS">WORKS</p>
       </nuxt-link>
-      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 blog" active-class="link-active" to="/Blog">
+      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 blog" active-class="link-active" to="/blog/">
         <font-awesome-icon :icon="['fas', 'keyboard']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="BLOG">BLOG</p>
       </nuxt-link>

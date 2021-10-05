@@ -20,6 +20,20 @@
           <h2 class="text-3xl bold p-2.5 bg-white inline-block">OFFERS</h2>
         </div>
         <div class="works-block p-2.5">
+          <h3 class="works-block_headline md:text-2xl text-lg">ウェブデザイン</h3>
+          <div class="works-block_text md:text-base text-sm p-4">
+            <p>情報設計から構成案作成、デザインカンプまで一貫して制作を行います。</p>
+            <p>キャンペーンサイトやランディングページ（LP）のような小規模制作から、企業や店舗様のホームページやブランドサイトなど中規模制作まで承ります。</p>
+            <ul class="list-hyphen">
+              <li>広告クリエイティブ・バナー制作</li>
+              <li>ウェブサイト・ページデザイン</li>
+              <li>ランディングページデザイン</li>
+            </ul>
+            <p>etc...</p>
+          </div>
+          <div class="works-block_image"></div>
+        </div>
+        <div class="works-block p-2.5">
           <h3 class="works-block_headline md:text-2xl text-lg">コーディング / CMS構築</h3>
           <div class="works-block_text md:text-base text-sm p-4">
             <p>デザインカンプを元に、HTML・CSSなどを使用してブラウザ上に再現します。</p>
@@ -35,32 +49,18 @@
           </div>
           <div class="works-block_image"></div>
         </div>
-        <div class="works-block p-2.5">
-          <h3 class="works-block_headline md:text-2xl text-lg">ウェブデザイン</h3>
-          <div class="works-block_text md:text-base text-sm p-4">
-            <p>情報設計から構成案作成、デザインカンプまで一貫して制作を行います。</p>
-            <p>キャンペーンサイトやランディングページ（LP）のような小規模制作から、企業や店舗様のホームページやブランドサイトなど中規模制作まで承ります。</p>
-            <ul class="list-hyphen">
-              <li>バナー</li>
-              <li>ウェブサイト</li>
-              <li>ウェブページ/ランディングページ</li>
-            </ul>
-            <p>etc...</p>
-          </div>
-          <div class="works-block_image"></div>
-        </div>
+
         <div class="works-block p-2.5">
           <h3 class="works-block_headline md:text-2xl text-lg">その他</h3>
           <div class="works-block_text md:text-base text-sm p-4">
             <p>運用上必要な画像などの素材や、大小問わずウェブコンテンツ作成を承ります。</p>
-            <p>店舗運営や、販促の際に使用する名刺やショップカード、パンフレットなど印刷物のデザインやロゴの作成なども承ります。</p>
+            <!-- <p>店舗運営や、販促の際に使用する名刺やショップカードなど印刷物のデザインやロゴの作成なども承ります。</p> -->
             <p>制作サイトや既存サイトの保守・運用代行なども行っておりますので、お気軽にご相談ください。</p>
             <ul class="list-hyphen">
               <li>素材作成・写真編集</li>
               <li>ライティング</li>
               <li>サイト保守、運用代行</li>
-              <li>名刺、ショップカード</li>
-              <li>ロゴ作成</li>
+              <li>名刺・ロゴ作成</li>
             </ul>
             <p>etc...</p>
           </div>
