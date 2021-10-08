@@ -51,6 +51,9 @@ body {
   @include mq(){
     max-width: 92%;
   }
+  &._post{
+    max-width: 1080px;
+  }
 }
 .section {
   padding: 6rem 0;
@@ -98,10 +101,7 @@ body {
   z-index: -99;
 }
 .balloon{
-  margin: 4rem auto;
-  @include mq(md){
-    margin: 2rem auto;
-  }
+  margin: 2rem auto;
   .icons{
     min-width: 4rem ;
     height: 4rem;
@@ -495,7 +495,7 @@ body {
     height: 100%;
     position: absolute;
     z-index: 2;
-    background: linear-gradient(0deg, white 0%, white 0%, rgba(255, 255, 255, 0) 10%);
+    background: linear-gradient(0deg, white 0%, white 0%, rgba(255, 255, 255, 0.1) 10%);
   }
   &:after{
     // content: '';
@@ -1089,7 +1089,7 @@ body {
     }
   }
   &-contents{
-    padding: 2rem 2%;
+    padding: 2rem 1%;
     @include mq(md){
       padding: 2%;
     }

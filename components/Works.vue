@@ -20,7 +20,7 @@
           </span>
           <div class="p-2.5">
             <p class="description text-sm text-gray-900">{{ item.description }}</p>
-            <p class="charge text-sm text-gray-400">{{ item.charge }}</p>
+            <p class="charge text-sm text-gray-400">SCOPE : {{ item.charge }}</p>
           </div>
         </div>
       </a>
@@ -47,8 +47,8 @@ export default ({
           id: 2 ,
           category: 'WEB SITE' ,
           title: 'DSC LLC. CORPORATE SITE',
-          description:'通販コンサルタントの[ DSC合同会社 ]様のホームページリニューアルを行いました。',
-          charge:'Design / Coding',
+          description:'通販コンサルタント[ DSC合同会社 ]様のホームページリニューアルを担当させて頂きました。',
+          charge:'Coding',
           link: 'https://d-s-c.jp/',
           image: require('@/assets/images/works/dsc.png')
         },

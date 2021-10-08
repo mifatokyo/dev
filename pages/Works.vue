@@ -33,6 +33,9 @@
             <p>明示は控えますが、掲載以外で過去携わった案件なども少しお話しできますので、お気軽にご連絡ください。</p>
           </div>
         </div>
+        <nuxt-link to="/#contact" class="button trans">
+          <span>ご相談はこちらから</span><em></em>
+        </nuxt-link>
       </section>
     </main>
     <Footer/>

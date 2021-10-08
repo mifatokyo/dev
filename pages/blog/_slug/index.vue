@@ -21,7 +21,7 @@
       <div class="inner">
         <!-- <Breadcrumb :category="category" /> -->
       </div>
-      <section class="inner md:p-2.5 p-1">
+      <section class="inner _post md:p-2.5 p-1">
         <div class="post-contents" v-html="contents"></div>
         <!-- 前後の記事 -->
         <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">
@@ -82,15 +82,15 @@ export default {
           headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' },
         }
       );
+      const index = links.data.contents.findIndex((content) => content.id === params.slug)
+      const prevLink = links.data.contents[index - 1];
+      const nextLink = links.data.contents[index + 1];
       const $ = cheerio.load(data.contents);
       $('pre code').each((_, elm) => {
         const res = hljs.highlightAuto($(elm).text());
         $(elm).html(res.value);
         $(elm).addClass('hljs');
       });
-      const index = links.data.contents.findIndex((content) => content.id === params.slug);
-      const prevLink = links.data.contents[index - 1];
-      const nextLink = links.data.contents[index + 1];
       return {
         ...data,
         contents: $.html(),
@@ -103,7 +103,6 @@ export default {
         errorCode: 404,
       });
     }
-
   },
   head() {
     return {

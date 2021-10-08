@@ -50,11 +50,11 @@
           <div class="works-block_image"></div>
         </div>
 
-        <div class="works-block p-2.5">
+        <!-- <div class="works-block p-2.5">
           <h3 class="works-block_headline md:text-2xl text-lg">その他</h3>
           <div class="works-block_text md:text-base text-sm p-4">
             <p>運用上必要な画像などの素材や、大小問わずウェブコンテンツ作成を承ります。</p>
-            <!-- <p>店舗運営や、販促の際に使用する名刺やショップカードなど印刷物のデザインやロゴの作成なども承ります。</p> -->
+            <p>店舗運営や、販促の際に使用する名刺やショップカードなど印刷物のデザインやロゴの作成なども承ります。</p>
             <p>制作サイトや既存サイトの保守・運用代行なども行っておりますので、お気軽にご相談ください。</p>
             <ul class="list-hyphen">
               <li>素材作成・写真編集</li>
@@ -65,7 +65,7 @@
             <p>etc...</p>
           </div>
           <div class="works-block_image"></div>
-        </div>
+        </div> -->
       </section>
       <section>
         <div class="balloon flex justify-center">
@@ -79,6 +79,9 @@
             <p>ぜひご相談ください。</p>
           </div>
         </div>
+        <nuxt-link to="/#contact" class="button trans">
+          <span>ご相談はこちらから</span><em></em>
+        </nuxt-link>
       </section>
     </main>
     <Footer/>

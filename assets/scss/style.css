@@ -471,6 +471,10 @@ body {
   }
 }
 
+.inner._post {
+  max-width: 1080px;
+}
+
 .section {
   padding: 6rem 0;
   position: relative;
@@ -522,13 +526,7 @@ body {
 }
 
 .balloon {
-  margin: 4rem auto;
-}
-
-@media screen and (max-width: 768px) {
-  .balloon {
-    margin: 2rem auto;
-  }
+  margin: 2rem auto;
 }
 
 .balloon .icons {
@@ -977,7 +975,7 @@ body {
   height: 100%;
   position: absolute;
   z-index: 2;
-  background: linear-gradient(0deg, white 0%, white 0%, rgba(255, 255, 255, 0) 10%);
+  background: linear-gradient(0deg, white 0%, white 0%, rgba(255, 255, 255, 0.1) 10%);
 }
 
 .mainview:after {
@@ -1622,7 +1620,7 @@ body {
 }
 
 .post-contents {
-  padding: 2rem 2%;
+  padding: 2rem 1%;
 }
 
 @media screen and (max-width: 768px) {

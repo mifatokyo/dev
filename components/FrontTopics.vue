@@ -46,7 +46,7 @@ export default ({
           title: '納品事例を更新しました。',
           description:'納品済みの2サイトを掲載しました。',
           link: '/Works',
-          image: require('@/assets/images/topics/sample2.png')
+          image: require('@/assets/images/topics/works-updata.png')
         },
         {
           id: 1 ,

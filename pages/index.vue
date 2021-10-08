@@ -23,11 +23,11 @@
     <section class="front-service inner section">
       <div class="float _org"></div>
       <div class="">
-        <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Serviec">SERVICE</h2>
+        <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Concept">CONCEPT</h2>
       </div>
       <Service/>
       <nuxt-link to="/service" class="button trans">
-        <span>VIEW MORE</span><em></em>
+        <span>SERVICE</span><em></em>
       </nuxt-link>
     </section>
     <div class="z-0 relative front-bg">
