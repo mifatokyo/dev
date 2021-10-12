@@ -21,7 +21,7 @@
       <div class="inner">
         <!-- <Breadcrumb :category="category" /> -->
       </div>
-      <section class="inner _post md:p-2.5 p-1">
+      <section class="inner _post md:p-2.5 p-1 bg-white">
         <div class="post-contents" v-html="contents"></div>
         <!-- 前後の記事 -->
         <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">

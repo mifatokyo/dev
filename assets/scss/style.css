@@ -1636,20 +1636,27 @@ body {
 .post-contents h2 {
   font-size: 1.5em;
   border-bottom: 2px solid;
+  margin: 2em 0;
 }
 
 .post-contents h3 {
-  font-size: 1.2em;
-  border-left: 4px dotted;
+  font-size: 1.3em;
+  border-left: 4px dotted #FF8E3C;
   padding-left: .8em;
+  margin: 1.6em 0;
 }
 
 .post-contents h4 {
-  font-size: 1.1em;
+  font-size: 1.15em;
+  margin: 1.4em 0;
 }
 
 .post-contents h4:before {
-  content: '- ';
+  content: ' - ';
+}
+
+.post-contents h4::first-letter {
+  color: #FF8E3C;
 }
 
 .post-contents a {
@@ -1666,6 +1673,12 @@ body {
   .post-contents p {
     font-size: .9rem;
   }
+}
+
+.post-contents blockquote {
+  background: #eee;
+  color: #666;
+  padding: 0.8em 1em;
 }
 
 .post-sibling {

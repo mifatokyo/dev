@@ -1099,16 +1099,22 @@ body {
     h2{
       font-size: 1.5em;
       border-bottom: 2px solid ;
+      margin: 2em 0;
     }
     h3{
-      font-size: 1.2em;
-      border-left: 4px dotted;
+      font-size: 1.3em;
+      border-left: 4px dotted $Org;
       padding-left: .8em;
+      margin: 1.6em 0;
     }
     h4{
-      font-size: 1.1em;
+      font-size: 1.15em;
+      margin: 1.4em 0;
       &:before{
-        content: '- ';
+        content: ' - ';
+      }
+      &::first-letter{
+        color: $Org;
       }
     }
     a{
@@ -1117,10 +1123,15 @@ body {
       text-decoration: underline;
     }
     p{
-     font-size: 1rem;
-     @include mq(md){
-       font-size: .9rem;
-     }
+      font-size: 1rem;
+      @include mq(md){
+        font-size: .9rem;
+      }
+    }
+    blockquote{
+      background: #eee;
+      color: #666;
+      padding: 0.8em 1em;
     }
   }
   &-sibling{
