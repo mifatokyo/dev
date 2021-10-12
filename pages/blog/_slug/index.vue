@@ -23,8 +23,8 @@
       </div>
       <section class="inner _post md:p-2.5 p-1 bg-white">
         <div class="post-contents" v-html="contents"></div>
-        <!-- 前後の記事 -->
-        <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">
+        <!-- ページャー -->
+        <!-- <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">
           <li v-if="prev" class="prev">
             <a :href="prev.id" rel="prev" class="post-sibling_paging _prev p-1.5 link--arrowed">
               <p>{{ prev.title }}</p>
@@ -47,8 +47,27 @@
               </svg>
             </a>
           </li>
-        </ul>
+        </ul> -->
+        <!-- // ページャー -->
       </section>
+      <!-- 吹き出し -->
+      <section>
+        <div class="balloon flex justify-center">
+          <div class="icons">
+            <figure>
+              <img src="~@/assets/images/mifa_logo.svg" alt="mifaより">
+            </figure>
+          </div>
+          <div class="speech md:p-4 p-2 text-xs rounded">
+            <p>最後までお読み頂きありがとうございました。</p>
+            <p>記事内で何かお気づきの点等ございましたら、下記ボタンよりご連絡ください。</p>
+          </div>
+        </div>
+        <nuxt-link to="/#contact" class="button trans">
+          <span>CONTACT</span><em></em>
+        </nuxt-link>
+      </section>
+      <!-- // 吹き出し -->
     </article>
     <Footer/>
   </div>
