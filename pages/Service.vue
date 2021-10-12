@@ -67,6 +67,7 @@
           <div class="works-block_image"></div>
         </div> -->
       </section>
+      <!-- 吹き出し -->
       <section>
         <div class="balloon flex justify-center">
           <div class="icons">
@@ -75,7 +76,7 @@
             </figure>
           </div>
           <div class="speech md:p-4 p-2 text-xs rounded">
-            <p>記載外の項目につきましても、お手伝い出来ることがあるかもしれません。</p>
+            <p>記載外の項目につきましてもお手伝い出来ることがあるかもしれません。</p>
             <p>ぜひご相談ください。</p>
           </div>
         </div>
@@ -83,6 +84,7 @@
           <span>ご相談はこちらから</span><em></em>
         </nuxt-link>
       </section>
+      <!-- // 吹き出し -->
     </main>
     <Footer/>
   </div>
