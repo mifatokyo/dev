@@ -2,8 +2,9 @@
   <div class="grid grid-cols-1 md:grid-cols-2">
     <div class="contact-text md:text-base text-sm p-2.5 md:mt-8">
       <p class="mb-4">制作のご依頼やご相談、ご要望など<br>ご連絡は右のフォームよりお待ちしています。</p>
-      <p>1~2日以内に折り返しご連絡させて頂きます。</p>
-      <p class="mb-4">是非、お気軽にお問い合わせください。</p>
+      <p class="mb-4">1~2日以内に折り返しご連絡させて頂きます。</p>
+      <p>まずはざっくりとでもお話を伺えればと思います。</p>
+      <p>是非、お気軽にお問い合わせください。</p>
     </div>
     <div class="front-contact">
       <form name="contact" method="POST" class="front-contact_form"  data-netlify-honeypot="bot-field" netlify>
