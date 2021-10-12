@@ -2,8 +2,8 @@
   <div class="mainview">
     <div class="mainview-text flex item-center">
       <div class="self-center">
-        <p class="key md:text-6xl text-2xl p-2.5 font-nsans tracking-wide">
-          <b class="leading-snug uppercase">feel more familiar<br>with "Web Design" .</b>
+        <p class="key md:text-6xl p-2.5 font-nsans tracking-wide">
+          <b class="leading-snug uppercase">feel more familiar<br>with "Web Design".</b>
         </p>
         <p class="caption p-2.5 font-black">"ウェブ制作"をもっと身近に。</p>
       </div>

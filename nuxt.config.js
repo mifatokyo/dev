@@ -56,6 +56,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
+    '@aceforth/nuxt-optimized-images',
     // 'nuxt-microcms-module',
   ],
 
@@ -82,13 +83,16 @@ export default {
       '~/assets/scss/style.scss'
     ]
   },
+  optimizedImages: {
+    optimizeImages: true
+  },
   // googleAnalytics: {
   //   id: 'G-XTSN9TESN4'
   // },
-  // 'google-gtag': {
-  //   id: 'G-XTSN9TESN4',
-  //   debug: true
-  // },
+  'google-gtag': {
+    id: 'G-XTSN9TESN4',
+    debug: true
+  },
   webfontloader: {
     google: {
       families: [

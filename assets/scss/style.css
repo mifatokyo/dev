@@ -1003,6 +1003,12 @@ body {
   background: #fff;
 }
 
+@media screen and (max-width: 768px) {
+  .mainview-text .key {
+    font-size: 7vw;
+  }
+}
+
 .mainview-text .caption {
   margin-top: .6rem;
   display: inline-block;
