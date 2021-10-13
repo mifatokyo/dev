@@ -97,7 +97,12 @@
       )
       return data
     },
-
+    head() {
+      return {
+        title: 'Webデザイナー mifa.tokyo',
+        titleTemplate: null
+      }
+    }
   }
 
 </script>

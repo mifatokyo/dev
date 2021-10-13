@@ -100,5 +100,20 @@
 			Header,
 			Footer,
 		},
+    head: {
+      title: 'mifaのサービス',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'mifaがご提供するサービスのご紹介です。デザインからコーディング、WordPress実装など対応いたします。既存サイトのリニューアル、ポイント修正なども受け賜っております。'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:'コーディング,代行,ホームページ,制作,WordPress,ワードプレス,構築,html,css,javascript,php,デザイン,ウェブ,ランディングページ,LP,店舗,企業,ブランド,サイト,レスポンシブ,バナー'
+        }
+      ],
+    },
   }
 </script>

@@ -5,9 +5,10 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs:{
-      lang: 'ja'
+      lang: 'ja',
+      prefix: 'og: http://ogp.me/ns#'
     },
-    title: 'mifa.tokyo | 東京を中心に活動するフリーランスWebデザイナー',
+    titleTemplate:  '%s | ' + ' Webデザイナー mifa.tokyo ',
     meta: [
       {
         charset: 'utf-8'
@@ -19,7 +20,12 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'mifa.tokyoは、東京を拠点として活動するウェブデザイナーです。ホームページ制作やデザイン、幅広くお手伝いさせていただきます。' || ''
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'ウェブデザイン , webデザイン , ホームページ , 制作,ウェブサイト,東京,フリーランス,'
       },
       {
         name: 'format-detection',

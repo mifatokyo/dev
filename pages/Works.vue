@@ -54,5 +54,20 @@
 			Footer,
       Works
 		},
+    head: {
+      title: 'mifaの納品実績',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'mifaが納品を差し上げた実績のご紹介です。業界問わず様々なお客様のサイトに携わらせていただきました。掲載街のものも様々ございますので、お気軽にご連絡ください。'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:'実績,納品,業界,コーディング,代行,ホームページ,制作,WordPress,ワードプレス,構築,html,css,javascript,php,デザイン,ウェブ,ランディングページ,LP,店舗,企業,ブランド,サイト,レスポンシブ,バナー'
+        }
+      ],
+    },
   }
 </script>

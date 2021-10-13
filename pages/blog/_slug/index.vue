@@ -4,7 +4,7 @@
     <article class="main">
       <section class="post-header">
         <img :src="content.thumbnail.url" class="post-header_bg">
-        <div class="inner grid md:grid-cols-2 grid-cols-1 ">
+        <div class="inner _post grid md:grid-cols-2 grid-cols-1 ">
           <div class="flex items-center">
             <div class="post-header_text">
               <h1 class="title p-1 md:text-3xl text-xl">{{ content.title }}</h1>
@@ -86,6 +86,36 @@ export default {
     Header,
     Footer,
   },
+  head() {
+    return {
+      title: this.title  ,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.content.description },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://mifa.tokyo/blog/${this.id}/`,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.ogimage && this.ogimage.url,
+        },
+      ],
+    };
+  },
   async asyncData({ params, error }) {
     try {
       const { data } = await axios.get(
@@ -123,31 +153,6 @@ export default {
       });
     }
   },
-  head() {
-    return {
-      title: this.title + ' | フリーランスウェブデザイナー mifa ' ,
-      meta: [
-        {
-          hid: 'description', name: 'description', content: this.description },
-        {
-          hid: 'og:title', property: 'og:title', content: this.title },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.description,
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: `https://blog.microcms.io/${this.id}/`,
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.ogimage && this.ogimage.url,
-        },
-      ],
-    };
-  },
+
 }
 </script>
