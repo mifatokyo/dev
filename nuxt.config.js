@@ -86,9 +86,9 @@ export default {
   optimizedImages: {
     optimizeImages: true
   },
-  // googleAnalytics: {
-  //   id: 'G-XTSN9TESN4'
-  // },
+  googleAnalytics: {
+    id: 'G-XTSN9TESN4'
+  },
   'google-gtag': {
     id: 'G-XTSN9TESN4',
     debug: true
