@@ -36,7 +36,7 @@ export default ({
       works: [
         {
           id: 1 ,
-          category: 'WEB SITE' ,
+          category: 'WORDPRESS' ,
           title: 'SuburbsRecords WEB SITE',
           description:'音楽を中心としたイベントやトータルデザイン、レコーディングを行うクリエイター集団[ SuburbsRecords ]様のホームページを制作しました。',
           charge:'Coding',
@@ -45,9 +45,9 @@ export default ({
         },
         {
           id: 2 ,
-          category: 'WEB SITE' ,
+          category: 'WORDPRESS' ,
           title: 'DSC LLC. CORPORATE SITE',
-          description:'通販コンサルタント[ DSC合同会社 ]様のホームページリニューアルを担当させて頂きました。',
+          description:'通販コンサルタント[ DSC合同会社 ]様のホームページリニューアルを行いました。。',
           charge:'Coding',
           link: 'https://d-s-c.jp/',
           image: require('@/assets/images/works/dsc.png')
