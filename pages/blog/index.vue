@@ -20,7 +20,12 @@
           <nuxt-link :to="`/blog/${content.id}`">
             <div class="post-image">
               <span class="text-white text-xs font-semibold category sample">{{ content.category.name }}</span>
-              <img :src="content.thumbnail.url" alt="">
+              <picture>
+                <!-- WebP用画像 -->
+                <source :srcset="content.thumbnail.url + '?fm=webp'" type="image/webp">
+                <!-- 従来画像 -->
+                <img :src="content.thumbnail.url">
+              </picture>
             </div>
             <div class="post-text">
               <h2 class="title">{{ content.title }}</h2>

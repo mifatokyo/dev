@@ -40,8 +40,14 @@
             <nuxt-link :to="`/blog/${content.id}`">
               <div class="post-image shadow-md">
                 <span class="text-white text-xs font-semibold category sample">{{ content.category.name }}</span>
-                <img v-if="content.thumbnail.url" :src="content.thumbnail.url" alt="">
-                <img v-else src="~/assets/images/post/noimages.jpg" alt="">
+                <picture>
+                  <!-- WebP用画像 -->
+                  <source :srcset="content.thumbnail.url + '?fm=webp'" type="image/webp">
+                  <!-- 従来画像 -->
+                  <img :src="content.thumbnail.url">
+                </picture>
+                <!-- <img v-if="content.thumbnail.url" :src="content.thumbnail.url" alt="">
+                <img v-else src="~/assets/images/post/noimages.jpg" alt=""> -->
               </div>
               <div class="post-text">
                 <h3 class="title">{{ content.title }}</h3>
