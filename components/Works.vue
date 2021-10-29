@@ -3,7 +3,11 @@
     <div class="works-list grid grid-cols-1 md:grid-cols-2">
       <a v-for="item in works" :key="item.id"  :href="item.link" target="_blank" rel="noopener noreferrer" class="works-item link text-sm text-blue-800 ">
         <div class="works-image bg-black trans shadow-md">
-          <img :src="item.image" :alt="item.title" class="trans ">
+          <picture>
+            <source :srcset="item.image + '?webp'" type="image/webp" >
+            <img :src="item.image" :alt="item.title" class="trans ">
+          </picture>
+
           <span class="outside text-white inset-0 flex justify-center items-center trans">
             <div>
               <font-awesome-icon :icon="['fas', 'external-link-alt']" class="md:block hidden icon text-3xl"/>

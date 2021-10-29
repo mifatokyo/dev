@@ -62,7 +62,6 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
-    '@aceforth/nuxt-optimized-images',
     // 'nuxt-microcms-module',
   ],
 
@@ -76,6 +75,7 @@ export default {
     'nuxt-webfontloader',
     'nuxt-fontawesome',
     '@nuxtjs/google-gtag',
+    '@aceforth/nuxt-optimized-images',
   ],
   // microcms: {
   //   options: {
@@ -90,7 +90,8 @@ export default {
     ]
   },
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: true,
+    optimizeImagesInDev: true,
   },
   googleAnalytics: {
     id: 'G-XTSN9TESN4'

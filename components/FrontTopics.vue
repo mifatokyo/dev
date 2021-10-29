@@ -3,7 +3,10 @@
     <ul class="topics-list grid grid-cols-1 md:grid-cols-2">
       <li v-for="item in list" :key="item.id" class="topics-item md:flex">
         <div class="topics-image">
-          <img :src="item.image" :alt="item.title">
+          <picture>
+            <source :srcset="item.image + '?webp'" type="image/webp" >
+            <img :src="item.image" :alt="item.title">
+          </picture>
         </div>
         <div class="topics-text md:p-0 p-2">
           <time class="text-gray-400 md:text-sm text-xs font-semibold time">{{ item.date }}</time>
