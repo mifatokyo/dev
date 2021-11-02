@@ -93,14 +93,13 @@ export default {
     optimizeImages: true,
     optimizeImagesInDev: true,
   },
-  // googleAnalytics: {
-  //   id: 'G-XTSN9TESN4'
-  // },
-  'google-gtag': {
-    id: 'UA-196409832-1',
-    // id: 'G-XTSN9TESN4',
-    debug: true
+  googleAnalytics: {
+    id: 'UA-196409832-1'
   },
+  // 'google-gtag': {
+  //   id: 'G-XTSN9TESN4',
+  //   debug: true
+  // },
   webfontloader: {
     google: {
       families: [
