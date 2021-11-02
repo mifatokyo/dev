@@ -97,7 +97,8 @@ export default {
   //   id: 'G-XTSN9TESN4'
   // },
   'google-gtag': {
-    id: 'G-XTSN9TESN4',
+    id: 'UA-196409832-1',
+    // id: 'G-XTSN9TESN4',
     debug: true
   },
   webfontloader: {
