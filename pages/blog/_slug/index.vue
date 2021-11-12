@@ -86,36 +86,7 @@ export default {
     Header,
     Footer,
   },
-  head() {
-    return {
-      title: this.title  ,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.content.description },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: this.title },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.description,
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: `https://mifa.tokyo/blog/${this.id}/`,
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.ogimage && this.ogimage.url,
-        },
-      ],
-    };
-  },
+
   async asyncData({ params, error }) {
     try {
       const { data } = await axios.get(
@@ -153,6 +124,41 @@ export default {
       });
     }
   },
-
+  data() {
+    return {
+      publishedAt: '',
+      ogimage: null,
+    };
+  },
+  head() {
+    return {
+      title: this.title  ,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.content.description },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://mifa.tokyo/blog/${this.id}/`,
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.ogimage && this.ogimage.url,
+        },
+      ],
+    };
+  },
 }
 </script>

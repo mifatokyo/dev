@@ -8,7 +8,7 @@ export default {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate:  '%s | ' + ' Webデザイナー mifa.tokyo ',
+    titleTemplate:  '%s | ' + ' Webデザイナー / mifa.tokyo ',
     meta: [
       {
         charset: 'utf-8'
@@ -76,6 +76,7 @@ export default {
     'nuxt-fontawesome',
     '@nuxtjs/google-gtag',
     '@aceforth/nuxt-optimized-images',
+    '@nuxtjs/sitemap'
   ],
   // microcms: {
   //   options: {
@@ -150,4 +151,37 @@ export default {
   //     },
   //   },
   // },
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://mifa.tokyo',
+    // cacheTime: 1000 * 60 * 15,
+    // gzip: true,
+    // generate: false,
+    // exclude: [
+    //   '/terms',
+    //   '/contact/complete',
+    //   '/register/complete',
+    //   '/privacy-policy',
+    //   '/mypage',
+    //   '/admin',
+    //   '/mypage/**',
+    //   '/admin/**'
+    // ],
+    // routes() {
+    //   return Promise.all([
+    //     axios.get('https://example.jp/api/posts'),
+    //     axios.get('https://example.jp/api/columns')
+    //   ])
+    //     .then(([posts, columns]) => {
+    //       let exp01 = posts.data.map(contact => '/posts/' + contact.slug)
+    //       let exp02 = columns.data.map(contact => '/columns/' + contact.slug)
+    //       let array = [exp01, exp02]
+    //       let flattened = array.reduce(
+    //         (accumulator, currentValue) => accumulator.concat(currentValue),
+    //         []
+    //       )
+    //       return flattened
+    //     })
+    // }
+  }
 }
