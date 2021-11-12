@@ -1,3 +1,4 @@
+import axios from 'axios'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -154,9 +155,13 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://mifa.tokyo',
+    // // サイトマップの更新頻度を設定する
     // cacheTime: 1000 * 60 * 15,
+    // // gzip形式のsitemapを生成するかどうか
     // gzip: true,
+    // // generate時に静的サイトマップを生成するかどうか
     // generate: false,
+    // // 除外
     // exclude: [
     //   '/terms',
     //   '/contact/complete',
@@ -167,21 +172,20 @@ export default {
     //   '/mypage/**',
     //   '/admin/**'
     // ],
-    // routes() {
-    //   return Promise.all([
-    //     axios.get('https://example.jp/api/posts'),
-    //     axios.get('https://example.jp/api/columns')
-    //   ])
-    //     .then(([posts, columns]) => {
-    //       let exp01 = posts.data.map(contact => '/posts/' + contact.slug)
-    //       let exp02 = columns.data.map(contact => '/columns/' + contact.slug)
-    //       let array = [exp01, exp02]
-    //       let flattened = array.reduce(
-    //         (accumulator, currentValue) => accumulator.concat(currentValue),
-    //         []
-    //       )
-    //       return flattened
-    //     })
-    // }
+    // // API取得のコンテンツ分を自動で取得する記述
+    routes(callback) {
+      axios.get(`https://mifatokyo.microcms.io/api/v1/post?limit=100`,
+        {
+          headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
+        }
+      )
+        .then((res) => {
+          const routes = res.data.contents.map((blog) => {
+            return '/blog/' + blog.id
+          })
+          callback(null, routes)
+        })
+        .catch(callback)
+    }
   }
 }
