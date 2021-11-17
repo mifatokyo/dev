@@ -117,7 +117,7 @@
       link: [
         {
           rel: "canonical",
-          href: `https://mifa.tokyo${this.$route.path}`,
+          href: `https://mifa.tokyo/service/`,
         },
       ],
     },
