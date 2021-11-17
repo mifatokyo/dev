@@ -9,7 +9,7 @@ export default {
       lang: 'ja',
       prefix: 'og: http://ogp.me/ns#'
     },
-    titleTemplate:  '%s | ' + ' Webデザイナー / mifa.tokyo ',
+    titleTemplate:  '%s | ' + 'mifa.tokyo',
     meta: [
       {
         charset: 'utf-8'
@@ -26,7 +26,7 @@ export default {
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'ウェブデザイン , webデザイン , ホームページ , 制作,ウェブサイト,東京,フリーランス,'
+        content: 'ウェブ, web , デザイン , ホームページ , 制作 , サイト , 東京 , フリーランス,フロントエンド ,frontend,freelance, コーディング,構築 '
       },
       {
         name: 'format-detection',
@@ -77,7 +77,9 @@ export default {
     'nuxt-fontawesome',
     '@nuxtjs/google-gtag',
     '@aceforth/nuxt-optimized-images',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'vue-scrollto/nuxt',
+      ['vue-scrollto/nuxt', { duration: 300 }],
   ],
   // microcms: {
   //   options: {

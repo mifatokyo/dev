@@ -63,7 +63,13 @@ a, input[tyle="checkbox"] + label {
 /* = = = = = = = = = = = = = = = =
 // USE microCMS
  = = = = = = = = = = = = = = = = */
-.code {
+code {
   padding: 1rem 2rem;
   border-radius: .5rem;
+  user-select: text;
+}
+
+code::selection {
+  background: #fff;
+  color: #000;
 }

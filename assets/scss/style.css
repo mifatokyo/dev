@@ -63,9 +63,15 @@ a, input[tyle="checkbox"] + label {
 /* = = = = = = = = = = = = = = = =
 // USE microCMS
  = = = = = = = = = = = = = = = = */
-.code {
+code {
   padding: 1rem 2rem;
   border-radius: .5rem;
+  user-select: text;
+}
+
+code::selection {
+  background: #fff;
+  color: #000;
 }
 
 /*! de-style.css v1.0.5 | MIT License | https://github.com/nicolas-cusan/destyle.css */
@@ -1754,6 +1760,61 @@ body {
 
 .post-sibling_paging._next .arrow-icon {
   right: 1em;
+}
+
+.toc {
+  padding: 2rem 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .toc {
+    padding: 2%;
+  }
+}
+
+.toc .title {
+  padding: 0 1rem;
+}
+
+.toc-inner {
+  padding: 1rem;
+  border-radius: .5rem;
+  background: #fcfcfc;
+}
+
+.toc-list {
+  font-size: .9em;
+  line-height: 2;
+}
+
+@media screen and (max-width: 768px) {
+  .toc-list {
+    font-size: .8em;
+  }
+}
+
+.toc-item {
+  padding: .4rem 1rem;
+}
+
+.toc-item:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.toc-item a {
+  display: inline;
+}
+
+.toc-item:before {
+  content: '-';
+}
+
+.toc-item.h2 {
+  font-weight: 900;
+}
+
+.toc-item.h3 {
+  margin-left: 1rem;
 }
 
 .breadcrumb {

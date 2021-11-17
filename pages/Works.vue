@@ -68,6 +68,12 @@
           content:'実績,納品,業界,コーディング,代行,ホームページ,制作,WordPress,ワードプレス,構築,html,css,javascript,php,デザイン,ウェブ,ランディングページ,LP,店舗,企業,ブランド,サイト,レスポンシブ,バナー'
         }
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: `https://mifa.tokyo${this.$route.path}`,
+        },
+      ],
     },
   }
 </script>

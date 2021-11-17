@@ -1,29 +1,29 @@
 // Decorations
 @mixin inputText{
 	height:r(80px);
-	background:$cInput;
 	border:none;
+	background:$cInput;
 }
 @mixin button{
 	display:flex;
-	justify-content:center;
 	align-items:center;
+	justify-content:center;
+	padding:0 r(15px);
 	min-width:r(150px);
 	height:r(40px);
-	padding:0 r(15px);
-	color:white;
-	background:$cBase;
-	border-radius:r(5px);
-	border:none;
 	outline:0;
+	border:none;
+	border-radius:r(5px);
+	background:$cBase;
+	color:white;
 	&:hover{
 		color:white !important;
 	}
 }
 @mixin card{
 	display:block;
-	background:white;
-	border-radius:r(10px);box-shadow:0 r(2px) r(8px) 0 rgba(104,85,58,0.3);}
+	border-radius:r(10px);
+	background:white;box-shadow:0 r(2px) r(8px) 0 rgba(104,85,58,0.3);}
 @mixin cardHover{box-shadow:0 0 r(20px) 0 rgba(64,128,255,1)}
 @mixin anime{transition: all 0.25s ease-out;}
 
@@ -131,7 +131,13 @@ a,input[tyle="checkbox"] + label{
 /* = = = = = = = = = = = = = = = =
 // USE microCMS
  = = = = = = = = = = = = = = = = */
- .code{
+ code{
 	padding: 1rem 2rem;
 	border-radius: .5rem;
+
+  user-select: text;
+	&::selection{
+		background: #fff;
+		color: #000;
+	}
  }

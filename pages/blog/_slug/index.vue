@@ -20,8 +20,10 @@
       </section>
       <div class="inner">
         <!-- <Breadcrumb :category="category" /> -->
+
       </div>
       <section class="inner _post md:p-2.5 p-1 bg-white">
+        <Toc :id="id" :toc="toc" />
         <div class="post-contents" v-html="contents"></div>
         <!-- ページャー -->
         <!-- <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">
@@ -78,6 +80,7 @@
   import hljs from 'highlight.js';
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
+  import Toc from "@/components/Toc.vue";
   import 'highlight.js/styles/github-dark.css';
   // シンタックスハイライトのテーマを変更したい時はここで→→→ https://highlightjs.org/static/demo/
 
@@ -85,10 +88,12 @@ export default {
   components:{
     Header,
     Footer,
+    Toc,
   },
 
   async asyncData({ params, error }) {
     try {
+
       const { data } = await axios.get(
       `https://mifatokyo.microcms.io/api/v1/post/${params.slug}`,
         {
@@ -102,10 +107,20 @@ export default {
           headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' },
         }
       );
+      // const $ = cheerio.load(body);
+
       const index = links.data.contents.findIndex((content) => content.id === params.slug)
       const prevLink = links.data.contents[index - 1];
       const nextLink = links.data.contents[index + 1];
       const $ = cheerio.load(data.contents);
+      const headings = $('h1, h2, h3').toArray();
+    const toc = headings.map((d) => {
+      return {
+        text: d.children[0].data,
+        id: d.attribs.id,
+        name: d.name,
+      };
+    });
       $('pre code').each((_, elm) => {
         const res = hljs.highlightAuto($(elm).text());
         $(elm).html(res.value);
@@ -117,6 +132,7 @@ export default {
         content: data,
         prev: prevLink,
         next: nextLink,
+        toc,
       }
     } catch (err) {
       error({
@@ -156,6 +172,12 @@ export default {
           hid: 'og:image',
           property: 'og:image',
           content: this.ogimage && this.ogimage.url,
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: `https://mifa.tokyo${this.$route.path}`,
         },
       ],
     };

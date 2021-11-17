@@ -106,7 +106,13 @@
     head() {
       return {
         title: 'Webデザイナー mifa.tokyo',
-        titleTemplate: null
+        titleTemplate: null,
+        link: [
+          {
+            rel: "canonical",
+            href: `https://mifa.tokyo${this.$route.path}`,
+          },
+        ],
       }
     }
   }
