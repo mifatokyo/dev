@@ -107,12 +107,12 @@
       return {
         title: 'Webデザイナー mifa.tokyo',
         titleTemplate: null,
-        link: [
-          {
-            rel: "canonical",
-            href: `https://mifa.tokyo`,
-          },
-        ],
+        // link: [
+        //   {
+        //     rel: "canonical",
+        //     href: `https://mifa.tokyo`,
+        //   },
+        // ],
       }
     }
   }

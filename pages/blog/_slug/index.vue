@@ -174,12 +174,12 @@ export default {
           content: this.ogimage && this.ogimage.url,
         },
       ],
-      link: [
-        {
-          rel: "canonical",
-          href: `https://mifa.tokyo${this.$route.path}`,
-        },
-      ],
+      // link: [
+      //   {
+      //     rel: "canonical",
+      //     href: `https://mifa.tokyo${this.$route.path}`,
+      //   },
+      // ],
     };
   },
 }
