@@ -23,7 +23,8 @@
 
       </div>
       <section class="inner _post md:p-2.5 p-1 bg-white">
-        <Toc :id="id" :toc="toc" />
+        <!-- <Toc :id="id" :toc="toc" /> -->
+        <Toc :toc="toc" />
         <div class="post-contents" v-html="contents"></div>
         <!-- ページャー -->
         <!-- <ul class="post-sibling grid md:grid-cols-2 grid-cols-1 text-sm">
