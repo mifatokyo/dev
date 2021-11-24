@@ -63,7 +63,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
-    'nuxt-microcms-module',
+    // 'nuxt-microcms-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -83,13 +83,13 @@ export default {
       'vue-scrollto/nuxt', { duration: 300 }
     ],
   ],
-  microcms: {
-    options: {
-      serviceDomain: process.env.SERVICE_DOMAIN,
-      apiKey: process.env.API_KEY,
-    },
-    mode: process.env.NODE_ENV === 'production' ? 'server' : 'all',
-  },
+  // microcms: {
+  //   options: {
+  //     serviceDomain: process.env.SERVICE_DOMAIN,
+  //     apiKey: process.env.API_KEY,
+  //   },
+  //   mode: process.env.NODE_ENV === 'production' ? 'server' : 'all',
+  // },
   styleResources: {
     scss: [
       '~/assets/scss/style.scss'
