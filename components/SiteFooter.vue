@@ -1,7 +1,7 @@
 <template>
 
   <footer class="footer">
-    <!--Waves Container-->
+    <!-- Waves Container -->
     <div>
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -16,7 +16,7 @@
           </g>
       </svg>
     </div>
-    <!--Waves end-->
+    <!-- // Waves -->
     <div class="bg-white">
       <ul class="social">
         <li></li>
@@ -27,18 +27,3 @@
     </div>
   </footer>
 </template>
-
-
-<script>
-// element.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   e.stopPropagation();
-
-//   setTimeout(() => {
-//     const target = document.querySelector(element.hash);
-//     if (target) {
-//       window.scrollTo({ left: 0, top: target.offsetTop, behavior: "smooth" });
-//     }
-//   }, 0);
-// });
-</script>
