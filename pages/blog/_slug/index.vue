@@ -108,20 +108,18 @@ export default {
           headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' },
         }
       );
-      // const $ = cheerio.load(body);
-
       const index = links.data.contents.findIndex((content) => content.id === params.slug)
       const prevLink = links.data.contents[index - 1];
       const nextLink = links.data.contents[index + 1];
       const $ = cheerio.load(data.contents);
       const headings = $('h1, h2, h3').toArray();
-    const toc = headings.map((d) => {
-      return {
-        text: d.children[0].data,
-        id: d.attribs.id,
-        name: d.name,
-      };
-    });
+      const toc = headings.map((d) => {
+        return {
+          text: d.children[0].data,
+          id: d.attribs.id,
+          name: d.name,
+        };
+      });
       $('pre code').each((_, elm) => {
         const res = hljs.highlightAuto($(elm).text());
         $(elm).html(res.value);
