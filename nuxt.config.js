@@ -65,6 +65,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
     // 'nuxt-microcms-module',
+    '@nuxtjs/router',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -73,6 +74,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
     '@nuxtjs/style-resources',
     'nuxt-webfontloader',
     'nuxt-fontawesome',
