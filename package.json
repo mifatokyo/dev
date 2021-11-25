@@ -22,6 +22,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sitemap": "^2.4.0",
     "cheerio": "^1.0.0-rc.10",
+    "connect-history-api-fallback": "^1.6.0",
     "core-js": "^3.15.1",
     "css-loader": "^4.2.0",
     "highlight.js": "^11.2.0",
