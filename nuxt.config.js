@@ -34,13 +34,13 @@ export default {
         content: 'telephone=no'
       }
     ],
-    link: [
-      {
-        rel: 'icon',
-        type: 'image/svg+xml',
-        href: '/favicon.svg'
-      }
-    ]
+    // link: [
+    //   {
+    //     rel: 'icon',
+    //     type: 'image/svg+xml',
+    //     href: '/favicon.svg'
+    //   }
+    // ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
