@@ -1,5 +1,6 @@
 <template>
   <div class="wrap">
+    <Header/>
     <MainView/>
     <section class="front-topics inner section">
       <div class="">
@@ -67,11 +68,14 @@
       </div>
       <Contact/>
     </section>
+    <Footer/>
   </div>
 </template>
 
 <script>
   import axios from 'axios';
+  import Header from "@/components/SiteHeader.vue";
+  import Footer from "@/components/SiteFooter.vue";
   import MainView from "@/components/MainView.vue";
   import Topics from "@/components/FrontTopics.vue";
   import Service from "@/components/FrontService.vue";
@@ -80,6 +84,8 @@
 
   export default {
     components: {
+			Header,
+			Footer,
       MainView,
       Topics,
       Works,
