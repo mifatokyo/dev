@@ -8,15 +8,15 @@
         <font-awesome-icon :icon="['fas', 'home']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="HOME">HOME</p>
       </nuxt-link>
-      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 service" active-class="link-active" to="/Service">
+      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 service" active-class="link-active" to="/service/">
         <font-awesome-icon :icon="['fas', 'desktop']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="SERVICE">SERVICE</p>
       </nuxt-link>
-      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 works" active-class="link-active" to="/Works">
+      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 works" active-class="link-active" to="/works/">
         <font-awesome-icon :icon="['fas', 'code-branch']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="WORKS">WORKS</p>
       </nuxt-link>
-      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 blog" active-class="link-active" to="/Blog">
+      <nuxt-link class="header-nav_item md:m-2 md:text-gray-400 blog" active-class="link-active" to="/blog/">
         <font-awesome-icon :icon="['fas', 'keyboard']" class="md:hidden block icon"/>
         <p class="text-progress" data-text="BLOG">BLOG</p>
       </nuxt-link>
