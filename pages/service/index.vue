@@ -111,7 +111,7 @@
         {
           hid: 'keywords',
           name: 'keywords',
-          content:'コーディング,代行,ホームページ,制作,WordPress,ワードプレス,構築,html,css,javascript,php,デザイン,ウェブ,ランディングページ,LP,店舗,企業,ブランド,サイト,レスポンシブ,バナー'
+          content:'コーディング,代行,ホームページ,制作,WordPress,ワードプレス,構築,html,css,javascript,php,デザイン,ウェブ,ランディングページ,LP,店舗,企業,ブランド,サイト,レスポンシブ,バナー,web ,homepage,design,ウェブデザイナー'
         }
       ],
       link: [

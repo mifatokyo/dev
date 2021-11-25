@@ -2,6 +2,7 @@ import axios from 'axios'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+  ssr: 'true',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -80,8 +81,8 @@ export default {
     '@nuxtjs/sitemap',
     'vue-scrollto/nuxt',
       [
-      'vue-scrollto/nuxt', { duration: 300 }
-    ],
+        'vue-scrollto/nuxt', { duration: 300 }
+      ],
   ],
   // microcms: {
   //   options: {
@@ -191,5 +192,8 @@ export default {
         })
         .catch(callback)
     }
+  },
+  generate: {
+    fallback: true
   }
 }
