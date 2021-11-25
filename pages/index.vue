@@ -30,7 +30,7 @@
         <span>SERVICE</span><em></em>
       </nuxt-link>
     </section>
-    <div class="z-0 relative front-bg">
+    <!-- <div class="z-0 relative front-bg">
       <section class="front-blog inner section">
         <div class="">
           <h2 class="front-headline2  md:text-7xl text-5xl leading-loose" data-text="Blog">BLOG</h2>
@@ -41,13 +41,9 @@
               <div class="post-image shadow-md">
                 <span class="text-white text-xs font-semibold category sample">{{ content.category.name }}</span>
                 <picture>
-                  <!-- WebP用画像 -->
                   <source :srcset="content.thumbnail.url + '?fm=webp'" type="image/webp">
-                  <!-- 従来画像 -->
                   <img :src="content.thumbnail.url">
                 </picture>
-                <!-- <img v-if="content.thumbnail.url" :src="content.thumbnail.url" alt="">
-                <img v-else src="~/assets/images/post/noimages.jpg" alt=""> -->
               </div>
               <div class="post-text">
                 <h3 class="title">{{ content.title }}</h3>
@@ -60,7 +56,7 @@
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>
-    </div>
+    </div> -->
     <section id="contact" class="inner section">
       <div class="float _red"></div>
       <div class="">
@@ -73,7 +69,7 @@
 </template>
 
 <script>
-  import axios from 'axios';
+  // import axios from 'axios';
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
   import MainView from "@/components/MainView.vue";
@@ -93,16 +89,16 @@
       Contact,
 		},
 
-    async asyncData() {
-      // microCMSからの記事取得
-      const { data } = await axios.get(
-        'https://mifatokyo.microcms.io/api/v1/post',
-        {
-          headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
-        }
-      )
-      return data
-    },
+    // async asyncData() {
+    //   // microCMSからの記事取得
+    //   const { data } = await axios.get(
+    //     'https://mifatokyo.microcms.io/api/v1/post',
+    //     {
+    //       headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
+    //     }
+    //   )
+    //   return data
+    // },
     head() {
       return {
         title: 'Webデザイナー mifa.tokyo',
