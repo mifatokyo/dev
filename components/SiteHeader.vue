@@ -1,5 +1,5 @@
 <template>
-  <client-only>
+  <no-ssr>
     <header class="header">
       <nuxt-link class="header-logo p-4" to="/">
         <img src="../assets/images/mifa_logo.png" alt="mifa tokyo">
@@ -27,5 +27,5 @@
         </nuxt-link>
       </nav>
     </header>
-  </client-only>
+  </no-ssr>
 </template>
