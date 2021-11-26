@@ -57,7 +57,7 @@
         </nuxt-link>
       </section>
     </div>
-    <no-ssr>
+    <cliant-only>
 
     <section id="contact" class="inner section">
       <div class="float _red"></div>
@@ -66,7 +66,7 @@
       </div>
       <Contact/>
     </section>
-    </no-ssr>
+    </cliant-only>
     <Footer/>
   </div>
 </template>
