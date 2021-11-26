@@ -69,7 +69,7 @@
 </template>
 
 <script>
-  // import axios from 'axios';
+  import axios from 'axios';
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
   import MainView from "@/components/MainView.vue";
