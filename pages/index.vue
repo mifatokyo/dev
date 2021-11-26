@@ -1,6 +1,7 @@
 <template>
   <div class="wrap">
     <Header/>
+    <MainView/>
 
     <Footer/>
   </div>
@@ -10,7 +11,7 @@
   // import axios from 'axios';
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
-  // import MainView from "@/components/MainView.vue";
+  import MainView from "@/components/MainView.vue";
   // import Topics from "@/components/FrontTopics.vue";
   // import Service from "@/components/FrontService.vue";
   // import Works from '@/components/Works.vue';
@@ -20,7 +21,7 @@
     components: {
 			Header,
 			Footer,
-      // MainView,
+      MainView,
       // Topics,
       // Works,
       // Service,
@@ -29,12 +30,12 @@
 
     // async asyncData() {
     //   // microCMSからの記事取得
-    //   // const { data } = await axios.get(
-    //   //   'https://mifatokyo.microcms.io/api/v1/post',
-    //   //   {
-    //   //     headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
-    //   //   }
-    //   // )
+    //   const { data } = await axios.get(
+    //     'https://mifatokyo.microcms.io/api/v1/post',
+    //     {
+    //       headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
+    //     }
+    //   )
     //   return data
     // },
     head() {
