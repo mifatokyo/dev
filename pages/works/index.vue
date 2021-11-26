@@ -19,7 +19,7 @@
         <div class="layer-headline2 ">
           <h2 class="text-3xl bold p-2.5 bg-white inline-block">WEB SITE</h2>
         </div>
-        <Works/>
+        <!-- <Works/> -->
       </section>
       <section>
         <div class="balloon flex justify-center">
@@ -52,7 +52,7 @@
     components: {
 			// Header,
 			// Footer,
-      Works
+      // Works
 		},
     head: {
       title: 'mifaの納品実績',
