@@ -56,14 +56,14 @@
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>
-    </div>
+    </div> -->
     <section id="contact" class="inner section">
       <div class="float _red"></div>
       <div class="">
         <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Contact">CONTACT</h2>
       </div>
       <Contact/>
-    </section> -->
+    </section>
     <Footer/>
   </div>
 </template>
@@ -76,7 +76,7 @@
   import Topics from "@/components/FrontTopics.vue";
   import Service from "@/components/FrontService.vue";
   // import Works from '@/components/Works.vue';
-  // import Contact from '@/components/Contact.vue';
+  import Contact from '@/components/Contact.vue';
 
   export default {
     components: {
@@ -86,7 +86,7 @@
       Topics,
       // Works,
       Service,
-      // Contact,
+      Contact,
 		},
 
     // async asyncData() {
