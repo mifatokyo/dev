@@ -1,8 +1,7 @@
 <template>
   <div>
-    <!-- <Header/> -->
-    aaaaaa
-    <!-- <main class="layer inner">
+    <Header/>
+    <main class="layer inner">
       <div>
         <h1 class="layer-headline1 text-5xl flef justify-center" data-text="Works">納品事例</h1>
       </div>
@@ -38,7 +37,43 @@
           <span>ご相談はこちらから</span><em></em>
         </nuxt-link>
       </section>
-    </main> -->
-    <!-- <Footer/> -->
+    </main>
+    <Footer/>
   </div>
 </template>
+
+
+<script>
+  import Header from "@/components/SiteHeader.vue";
+  import Footer from "@/components/SiteFooter.vue";
+  import Works from '@/components/Works.vue';
+
+  export default {
+    components: {
+			Header,
+			Footer,
+      Works
+		},
+    head: {
+      title: 'mifaの納品実績',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'mifaが納品を差し上げた実績のご紹介です。業界問わず様々なお客様のサイトに携わらせていただきました。掲載街のものも様々ございますので、お気軽にご連絡ください。'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:'実績,納品,業界,コーディング,代行,ホームページ,制作,WordPress,ワードプレス,構築,html,css,javascript,php,デザイン,ウェブ,ランディングページ,LP,店舗,企業,ブランド,サイト,レスポンシブ,バナー'
+        }
+      ],
+      // link: [
+      //   {
+      //     rel: "canonical",
+      //     href: `https://mifa.tokyo/works`,
+      //   },
+      // ],
+    },
+  }
+</script>
