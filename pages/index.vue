@@ -30,7 +30,7 @@
         <span>SERVICE</span><em></em>
       </nuxt-link>
     </section>
-    <!-- <div class="z-0 relative front-bg">
+    <div class="z-0 relative front-bg">
       <section class="front-blog inner section">
         <div class="">
           <h2 class="front-headline2  md:text-7xl text-5xl leading-loose" data-text="Blog">BLOG</h2>
@@ -56,14 +56,14 @@
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>
-    </div> -->
-    <section id="contact" class="inner section">
+    </div>
+    <!-- <section id="contact" class="inner section">
       <div class="float _red"></div>
       <div class="">
         <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Contact">CONTACT</h2>
       </div>
       <Contact/>
-    </section>
+    </section> -->
     <Footer/>
   </div>
 </template>
@@ -75,8 +75,8 @@
   import MainView from "@/components/MainView.vue";
   import Topics from "@/components/FrontTopics.vue";
   import Service from "@/components/FrontService.vue";
-  // import Works from '@/components/Works.vue';
-  import Contact from '@/components/Contact.vue';
+  import Works from '@/components/Works.vue';
+  // import Contact from '@/components/Contact.vue';
 
   export default {
     components: {
@@ -84,21 +84,21 @@
 			Footer,
       MainView,
       Topics,
-      // Works,
+      Works,
       Service,
-      Contact,
+      // Contact,
 		},
 
-    // async asyncData() {
-    //   // microCMSからの記事取得
-    //   const { data } = await axios.get(
-    //     'https://mifatokyo.microcms.io/api/v1/post',
-    //     {
-    //       headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
-    //     }
-    //   )
-    //   return data
-    // },
+    async asyncData() {
+      // microCMSからの記事取得
+      const { data } = await axios.get(
+        'https://mifatokyo.microcms.io/api/v1/post',
+        {
+          headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
+        }
+      )
+      return data
+    },
     head() {
       return {
         title: 'Webデザイナー mifa.tokyo',
