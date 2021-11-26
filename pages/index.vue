@@ -2,7 +2,12 @@
   <div class="wrap">
     <Header/>
     <MainView/>
-
+    <section class="front-topics inner section">
+      <div class="">
+        <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Topics">TOPICS</h2>
+      </div>
+      <Topics/>
+    </section>
     <Footer/>
   </div>
 </template>
@@ -12,7 +17,7 @@
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
   import MainView from "@/components/MainView.vue";
-  // import Topics from "@/components/FrontTopics.vue";
+  import Topics from "@/components/FrontTopics.vue";
   // import Service from "@/components/FrontService.vue";
   // import Works from '@/components/Works.vue';
   // import Contact from '@/components/Contact.vue';
@@ -22,7 +27,7 @@
 			Header,
 			Footer,
       MainView,
-      // Topics,
+      Topics,
       // Works,
       // Service,
       // Contact,
