@@ -1,4 +1,6 @@
-import axios from 'axios'
+import axios from 'axios';
+// require("dotenv").config();
+const { API_KEY, SERVICE_ID } = process.env;
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -64,7 +66,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/google-analytics',
-    // 'nuxt-microcms-module',
+    'nuxt-microcms-module',
     '@nuxtjs/router',
   ],
 
@@ -86,13 +88,13 @@ export default {
         'vue-scrollto/nuxt', { duration: 300 }
       ],
   ],
-  // microcms: {
-  //   options: {
-  //     serviceDomain: process.env.SERVICE_DOMAIN,
-  //     apiKey: process.env.API_KEY,
-  //   },
-  //   mode: process.env.NODE_ENV === 'production' ? 'server' : 'all',
-  // },
+  microcms: {
+    options: {
+      serviceDomain: SERVICE_ID,
+      apiKey: API_KEY,
+    },
+    mode: process.env.NODE_ENV === 'production' ? 'server' : 'all',
+  },
   styleResources: {
     scss: [
       '~/assets/scss/style.scss'
@@ -162,12 +164,13 @@ export default {
   sitemap: {
     path: '/sitemap.xml',
     hostname: 'https://mifa.tokyo',
-    // // サイトマップの更新頻度を設定する
+    trailingSlash: true,
+    // サイトマップの更新頻度を設定する
     // cacheTime: 1000 * 60 * 15,
-    // // gzip形式のsitemapを生成するかどうか
-    // gzip: true,
-    // // generate時に静的サイトマップを生成するかどうか
-    // generate: false,
+    // gzip形式のsitemapを生成するかどうか
+    gzip: true,
+    // generate時に静的サイトマップを生成するかどうか
+    generate: false,
     // // 除外
     // exclude: [
     //   '/terms',
@@ -197,5 +200,8 @@ export default {
   },
   generate: {
     fallback: true
+  },
+  router: {
+    trailingSlash: true
   }
 }

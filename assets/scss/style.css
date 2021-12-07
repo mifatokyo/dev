@@ -1342,6 +1342,36 @@ body {
   display: none;
 }
 
+.front-contact .contact-mailto {
+  position: relative;
+  display: inline-block;
+  margin: 2rem 0;
+  padding: 1rem 2rem 1rem 4rem;
+  border: 2px solid #222;
+  background: #fff;
+  font-size: 1.4em;
+}
+
+.front-contact .contact-mailto .icon {
+  position: absolute;
+  left: 2rem;
+}
+
+.front-contact .contact-mailto:hover {
+  background: #000;
+  color: #FF8E3C;
+}
+
+.front-contact .contact-mailto:hover .icon {
+  left: calc(50% - 1rem);
+  font-size: 1.1em;
+  transform: rotate(30deg);
+}
+
+.front-contact .contact-mailto:hover .text {
+  visibility: hidden;
+}
+
 .front-contact_form input,
 .front-contact_form textarea {
   padding: .2em .64em;
@@ -1614,8 +1644,18 @@ body {
   width: 100%;
   height: 100%;
   /* filter: grayscale(1); */
-  opacity: 0.4;
+  opacity: 0.2;
   object-fit: cover;
+}
+
+.post-header_text {
+  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .post-header_text {
+    margin-bottom: 2rem;
+  }
 }
 
 .post-contents {

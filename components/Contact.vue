@@ -1,12 +1,17 @@
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2">
+  <div class="grid">
+    <!-- grid grid-cols-1 md:grid-cols-2 -->
     <div class="contact-text md:text-base text-sm p-2.5 md:mt-8">
-      <p class="mb-4">制作のご依頼やご相談、ご要望など<br>ご連絡は右のフォームよりお待ちしています。</p>
+      <p>制作のご依頼やご相談などは、下記のメールアドレスまでご連絡ください。</p>
+      <a class="contact-mailto" href="mailto:imai@mifa.tokyo">
+        <font-awesome-icon :icon="['far', 'paper-plane']" class="icon block trans"/>
+        <span class="text">imai@mifa.tokyo</span>
+      </a>
+      <!-- <p class="mb-4">制作のご依頼やご相談、ご要望など<br>ご連絡は右のフォームよりお待ちしています。</p> -->
       <p class="mb-4">1~2日以内に折り返しご連絡させて頂きます。</p>
-      <p>まずはざっくりとでもお話を伺えればと思います。</p>
-      <p>是非、お気軽にお問い合わせください。</p>
+      <p>まずはざっくりとでもお話を伺えればと思いますので、是非お気軽にご連絡ください。</p>
     </div>
-    <div class="front-contact">
+    <!-- <div class="front-contact">
       <form name="contact" method="POST" class="front-contact_form"  data-netlify-honeypot="bot-field" netlify>
         <input type="hidden" name="mifaform" value="contact" />
         <div class="p-2.5">
@@ -39,6 +44,6 @@
         </div>
         <button type="submit" class="font-nsans btn">SEND</button>
       </form>
-    </div>
+    </div> -->
   </div>
 </template>

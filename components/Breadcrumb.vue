@@ -4,7 +4,7 @@
       <nuxt-link to="/">HOME</nuxt-link>
     </li>
     <li class="breadcrumbList">
-      <nuxt-link to="/Blog">BLOG</nuxt-link>
+      <nuxt-link to="/blog/">BLOG</nuxt-link>
     </li>
     <li v-if="hasCategory(category)" class="breadcrumbList">
       <!-- <nuxt-link :to="`/category/${category.id}/page/1`">{{

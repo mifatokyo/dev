@@ -51,11 +51,20 @@ export default ({
           id: 2 ,
           category: 'WORDPRESS' ,
           title: 'DSC LLC. CORPORATE SITE',
-          description:'通販コンサルタント[ DSC合同会社 ]様のホームページリニューアルを行いました。。',
+          description:'通販コンサルタント[ DSC合同会社 ]様のホームページリニューアルを担当させて頂きました。',
           charge:'Coding',
           link: 'https://d-s-c.jp/',
           image: require('@/assets/images/works/dsc.png')
         },
+        // {
+        //   id: 3 ,
+        //   category: 'STUDIO' ,
+        //   title: 'TL inc. CORPORATE SITE',
+        //   description:'ウェブ制作会社[ 株式会社TL ]様のホームページリニューアルを担当させて頂きました。',
+        //   charge:'Design / Construction',
+        //   link: 'https://www.i-tl.jp/',
+        //   image: require('@/assets/images/works/i-tl.png')
+        // },
       ],
     }
   },

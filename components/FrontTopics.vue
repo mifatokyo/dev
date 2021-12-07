@@ -39,16 +39,16 @@ export default ({
           id: 3 ,
           date: '2021/10/4' ,
           title: 'ブログ投稿を開始しました。',
-          description:'制作・開発に関することや、身の回りのことを定期的に発信していきます。',
-          link: '/Blog',
-          image: require('@/assets/images/topics/sample3.png')
+          description:'投稿機能を実装しました。制作・開発に関することを中心に、定期的に発信していきます。',
+          link: '/blog/',
+          image: require('@/assets/images/topics/str-blog.png')
         },
         {
           id: 2 ,
           date: '2021/10/1' ,
           title: '納品事例を更新しました。',
-          description:'納品済みの2サイトを掲載しました。',
-          link: '/Works',
+          description:'納品サイトを掲載しました。',
+          link: '/works/',
           image: require('@/assets/images/topics/works-updata.png')
         },
         {

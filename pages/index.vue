@@ -26,7 +26,7 @@
         <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Concept">CONCEPT</h2>
       </div>
       <Service/>
-      <nuxt-link to="/service" class="button trans">
+      <nuxt-link to="/service/" class="button trans">
         <span>SERVICE</span><em></em>
       </nuxt-link>
     </section>
@@ -52,17 +52,18 @@
             </nuxt-link>
           </li>
         </ul>
-        <nuxt-link to="/blog" class="button trans">
+        <nuxt-link to="/blog/" class="button trans">
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>
     </div>
     <cliant-only>
-    <section id="contact" class="inner section">
+    <section id="contact" class="inner section front-contact">
       <div class="float _red"></div>
       <div class="">
         <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Contact">CONTACT</h2>
       </div>
+      <Contact/>
     </section>
     </cliant-only>
     <Footer/>
@@ -77,6 +78,7 @@
   import Topics from "@/components/FrontTopics.vue";
   import Service from "@/components/FrontService.vue";
   import Works from '@/components/Works.vue';
+  import Contact from '@/components/Contact.vue';
 
   export default {
     components: {
@@ -86,6 +88,7 @@
       Topics,
       Works,
       Service,
+      Contact,
 		},
 
     async asyncData() {
