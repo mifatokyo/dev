@@ -13,7 +13,7 @@
           <h3 class="title font-semibold">{{ item.title }}</h3>
           <p class="description md:text-sm text-xs">{{ item.description }}</p>
           <a :href="item.link" class="link text-sm text-blue-800">
-            <p v-if="item.link">{{ item.link }}<font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/></p>
+            <p v-if="item.link">{{ item.linkText }}<font-awesome-icon :icon="['fas', 'external-link-alt']" class="icon"/></p>
           </a>
         </div>
       </li>
@@ -39,8 +39,9 @@ export default ({
           id: 3 ,
           date: '2021/10/4' ,
           title: 'ブログ投稿を開始しました。',
-          description:'投稿機能を実装しました。制作・開発に関することを中心に、定期的に発信していきます。',
+          description:'制作・開発に関することを中心に、定期的に発信していきます。',
           link: '/blog/',
+          linkText: 'BLOG',
           image: require('@/assets/images/topics/str-blog.png')
         },
         {
@@ -49,6 +50,7 @@ export default ({
           title: '納品事例を更新しました。',
           description:'納品サイトを掲載しました。',
           link: '/works/',
+          linkText: 'WORKS',
           image: require('@/assets/images/topics/works-updata.png')
         },
         {

@@ -39,8 +39,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 900;
   margin: 0;
+  font-weight: 900;
 }
 
 ul,
@@ -59,22 +59,22 @@ dd {
 }
 
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
+  clear: both;
   /* 1 */
   overflow: visible;
+  box-sizing: content-box;
+  margin: 0;
+  /* 1 */
+  height: 0;
   /* 2 */
   border: 0;
   border-top: 1px solid;
-  margin: 0;
-  clear: both;
 }
 
 pre {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: inherit;
+  font-family: monospace, monospace;
   /* 2 */
 }
 
@@ -83,13 +83,13 @@ address {
 }
 
 a {
-  transition: 0.4s;
-  word-break: break-all;
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
   display: block;
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+  word-break: break-all;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 abbr[title] {
@@ -109,9 +109,9 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
   /* 1 */
   font-size: inherit;
+  font-family: monospace, monospace;
   /* 2 */
 }
 
@@ -121,10 +121,10 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
   position: relative;
   vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
 }
 
 sub {
@@ -137,10 +137,10 @@ sup {
 
 img {
   display: block;
-  width: auto;
-  height: auto;
   max-width: 100%;
   max-height: 100%;
+  width: auto;
+  height: auto;
   border-style: none;
 }
 
@@ -156,20 +156,21 @@ input,
 optgroup,
 select,
 textarea {
-  vertical-align: middle;
-  color: inherit;
-  font: inherit;
+  margin: 0;
+  padding: 0;
+  outline: 0;
   border: 0;
   background: transparent;
-  padding: 0;
-  margin: 0;
-  outline: 0;
+  color: inherit;
+  vertical-align: middle;
+  font: inherit;
 }
 
 select {
+  border-radius: 0;
+
   -webkit-appearance: none;
   appearance: none;
-  border-radius: 0;
 }
 
 button,
@@ -189,6 +190,7 @@ button,
 [type="reset"],
 [type="submit"] {
   cursor: pointer;
+
   -webkit-appearance: none;
   appearance: none;
 }
@@ -218,18 +220,18 @@ button:-moz-focusring,
 fieldset {
   margin: 0;
   padding: 0;
-  border: 0;
   min-width: 0;
+  border: 0;
 }
 
 legend {
-  color: inherit;
   /* 2 */
   display: table;
   /* 1 */
-  max-width: 100%;
-  /* 1 */
   padding: 0;
+  /* 1 */
+  max-width: 100%;
+  color: inherit;
   /* 3 */
   white-space: normal;
   /* 1 */
@@ -257,9 +259,10 @@ textarea {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
+
+  -webkit-appearance: textfield;
   /* 2 */
 }
 
@@ -268,9 +271,10 @@ textarea {
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
   /* 1 */
   font: inherit;
+
+  -webkit-appearance: button;
   /* 2 */
 }
 
@@ -303,8 +307,8 @@ summary {
 }
 
 table {
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 
 caption {
@@ -335,16 +339,16 @@ th {
   margin: auto;
 }
 .mrl {
-  margin-left: auto;
   margin-right: 0;
+  margin-left: auto;
 }
 .mrr {
   margin-right: auto;
   margin-left: 0;
 }
 .mrb{
-  margin-bottom: auto;
   margin-top: 0;
+  margin-bottom: auto;
 }
 .mrt{
   margin-top: auto;

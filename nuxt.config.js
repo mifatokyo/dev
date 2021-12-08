@@ -199,9 +199,16 @@ export default {
     }
   },
   generate: {
-    fallback: true
+    fallback: true,
   },
   router: {
-    trailingSlash: true
+    trailingSlash: true,
+    extendRoutes (routes, resolve) {
+      routes.push({
+        name: 'custom',
+        path: '*',
+        component: resolve(__dirname, 'pages/errors/404.vue')
+      })
+    }
   }
 }

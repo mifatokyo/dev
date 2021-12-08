@@ -77,11 +77,11 @@ body {
   }
 }
 .trans{
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-  transition: 0.4s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 
 }
 .time{
@@ -1358,7 +1358,26 @@ body {
   }
 }
 
+.errors{
+  @include mq(md){
+    padding: 4rem 0 0;
+  }
+  .title {
+    font-size: 12rem ;
 
+    @include mq(md){
+      font-size: 10rem;
+    }
+    span{
+      font-size: 0.2em;
+    }
+  }
+  .message {
+    @include mq(md){
+       font-size: .9rem;
+    }
+  }
+}
 
 
 .bgextend{
