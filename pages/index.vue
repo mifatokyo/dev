@@ -15,7 +15,7 @@
           <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Works">WORKS</h2>
         </div>
         <Works/>
-        <nuxt-link to="/works" class="button trans">
+        <nuxt-link to="/works/" class="button trans">
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>
@@ -57,7 +57,6 @@
         </nuxt-link>
       </section>
     </div>
-    <cliant-only>
     <section id="contact" class="inner section front-contact">
       <div class="float _red"></div>
       <div class="">
@@ -65,7 +64,6 @@
       </div>
       <Contact/>
     </section>
-    </cliant-only>
     <Footer/>
   </div>
 </template>

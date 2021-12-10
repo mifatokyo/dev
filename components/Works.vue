@@ -42,7 +42,7 @@ export default ({
           id: 1 ,
           category: 'WORDPRESS' ,
           title: 'SuburbsRecords WEB SITE',
-          description:'音楽を中心としたイベントやトータルデザイン、レコーディングを行うクリエイター集団[ SuburbsRecords ]様のホームページを制作しました。',
+          description:'音楽を中心としたイベントやトータルデザイン、レコーディングを行うクリエイター集団[ SuburbsRecords ]様のホームページ制作を担当させて頂きました。',
           charge:'Coding',
           link: 'https://suburbsrecords.com/',
           image: require('@/assets/images/works/suburbsrecords.jpg')
