@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header/>
     <main class="layer inner">
       <div>

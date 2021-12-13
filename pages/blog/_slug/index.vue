@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header/>
     <article class="main">
       <section class="post-header">
@@ -53,25 +53,25 @@
         </ul> -->
         <!-- // ページャー -->
       </section>
-      <!-- 吹き出し -->
-      <section>
-        <div class="balloon flex justify-center">
-          <div class="icons">
-            <figure>
-              <img src="~@/assets/images/mifa_logo.svg" alt="mifaより">
-            </figure>
-          </div>
-          <div class="speech md:p-4 p-2 text-xs rounded">
-            <p>最後までお読み頂きありがとうございました。</p>
-            <p>記事内で何かお気づきの点等ございましたら、下記ボタンよりご連絡ください。</p>
-          </div>
-        </div>
-        <nuxt-link to="/#contact" class="button trans">
-          <span>CONTACT</span><em></em>
-        </nuxt-link>
-      </section>
-      <!-- // 吹き出し -->
     </article>
+    <!-- 吹き出し -->
+    <aside>
+      <div class="balloon flex justify-center">
+        <div class="icons">
+          <figure>
+            <img src="~@/assets/images/mifa_logo.svg" alt="mifaより">
+          </figure>
+        </div>
+        <div class="speech md:p-4 p-2 text-xs rounded">
+          <p>最後までお読み頂きありがとうございました。</p>
+          <p>記事内で何かお気づきの点等ございましたら、下記ボタンよりご連絡ください。</p>
+        </div>
+      </div>
+      <nuxt-link to="/#contact" class="button trans">
+        <span>CONTACT</span><em></em>
+      </nuxt-link>
+    </aside>
+    <!-- // 吹き出し -->
     <Footer/>
   </div>
 </template>

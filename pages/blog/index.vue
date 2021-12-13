@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <Header/>
     <main class="layer inner">
       <div>
@@ -60,7 +60,7 @@
     components:{
       Header,
       Footer
-  },
+    },
     async asyncData() {
       const { data } = await axios.get(
         'https://mifatokyo.microcms.io/api/v1/post',

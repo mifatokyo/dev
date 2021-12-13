@@ -1,5 +1,5 @@
 <template>
-<div class="wrap">
+  <div class="wrapper">
     <Header/>
     <section class="errors text-center section md:my-32 my-0">
       <h1 class="title leading-none">404<span class="block tracking-tight">PAGE NOT FOUND</span></h1>

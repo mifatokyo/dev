@@ -1983,7 +1983,7 @@ body {
   }
 }
 
-/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+/* スクロールをしたら出現する要素にはじめに透過0を指定 */
 .bgappearTrigger,
 .bgLRextendTrigger {
   opacity: 0;

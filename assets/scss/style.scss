@@ -1449,7 +1449,7 @@ body {
 	}
 }
 
-/* スクロールをしたら出現する要素にはじめに透過0を指定　*/
+/* スクロールをしたら出現する要素にはじめに透過0を指定 */
 .bgappearTrigger,
 .bgLRextendTrigger{
     opacity: 0;
@@ -1457,9 +1457,66 @@ body {
 
 // ダークモード設定
 
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     background-color: #222;
-//     color: #fff;
+// @media screen and (prefers-color-scheme: dark) {
+//   // .mainview-image,
+//   // .mainview:before,
+//   // .float{
+//   //   display: none;
+//   // }
+//   // .button {
+//   //   border-color: $Kro;
+//   //   color: $Kro;
+//   // }
+//   // .front{
+//   //   &-headline2{
+//   //     -webkit-text-stroke-color: #fff;
+//   //   }
+//   //   &-bg{
+//   //     &:before{
+//   //       background: #ffe0a2;
+//   //     }
+//   //   }
+//   // }
+//   // body {
+//   //   background-color: #222;
+//   //   color: #fff;
+//   // }
+//   // article{
+//   //   background: $Kro;
+//   //   section{
+//   //     &._post{
+//   //       background: $Kro;
+//   //       color: #fff;
+//   //     }
+//   //   }
+//   //   .toc-item {
+//   //     color: $Kro;
+//   //   }
+//   //   .post{
+//   //     &-header{
+//   //       z-index: 1;
+//   //       background: $Kro;
+//   //     }
+//   //     &-contents{
+//   //       a{
+//   //         background: #fff;
+//   //       }
+//   //     }
+//   //   }
+//   //   .balloon .speech{
+//   //     color: #fff;
+//   //     &:after{
+//   //       border-right: .8rem solid #222;
+//   //     }
+//   //   }
+//   // }
+// }
+
+// @media screen and (prefers-color-scheme: dark) {
+//   body{
+//     // background: #000;
+//     &:not( img ){
+//       filter: invert(100%) hue-rotate(180deg);
+//     }
 //   }
 // }
