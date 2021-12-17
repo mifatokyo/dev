@@ -70,3 +70,11 @@ export default ({
   },
 })
 </script>
+<style scoped lang="scss">
+  body{
+    display: block;
+    main{
+      display: block;
+    }
+  }
+</style>
