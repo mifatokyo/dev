@@ -4,7 +4,6 @@ const { API_KEY, SERVICE_ID } = process.env;
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  ssr: 'true',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
