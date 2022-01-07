@@ -1,10 +1,15 @@
 <template>
       <ul class="blog-list grid md:gap-5 gap-10 grid-cols-1 md:grid-cols-3 p-4">
         <li v-for="content in contents" :key="content.id" class="blog-item">
-          <nuxt-link :to="`/blog/${content.id}`">
+          <nuxt-link :to="`/blog/${content.id}/`">
             <div class="post-image">
               <span class="text-white text-xs font-semibold category sample">{{ content.category.name }}</span>
-              <img :src="content.thumbnail.url" alt="">
+              <picture>
+                <!-- WebP用画像 -->
+                <source :srcset="content.thumbnail.url + '?fm=webp'" type="image/webp">
+                <!-- 従来画像 -->
+                <img :src="content.thumbnail.url">
+              </picture>
             </div>
             <div class="post-text">
               <h2 class="title">{{ content.title }}</h2>
@@ -16,18 +21,21 @@
 </template>
 
 <script>
-  import axios from 'axios'
+  import axios from 'axios';
   export default {
-    async asyncData() {
+    async asyncData({$config}) {
       const { data } = await axios.get(
-        // your-service-id部分は自分のサービスidに置き換えてください
         'https://mifatokyo.microcms.io/api/v1/post',
         {
-          // your-api-key部分は自分のapi-keyに置き換えてください
-          headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
+          headers: { 'X-API-KEY': $config.apiKey }
         }
       )
       return data
     },
+    data() {
+      return{
+        contents: "",
+      }
+    }
   }
 </script>

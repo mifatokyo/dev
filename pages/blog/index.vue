@@ -56,16 +56,17 @@
   import axios from 'axios'
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
+  // import Blog from "@/components/Blog.vue";
   export default {
     components:{
       Header,
-      Footer
+      Footer,
     },
-    async asyncData() {
+    async asyncData({$config}) {
       const { data } = await axios.get(
         'https://mifatokyo.microcms.io/api/v1/post',
         {
-          headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
+          headers: { 'X-API-KEY': $config.apiKey }
         }
       )
       return data

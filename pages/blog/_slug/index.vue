@@ -112,9 +112,11 @@ export default {
       const prevLink = links.data.contents[index - 1];
       const nextLink = links.data.contents[index + 1];
       const $ = cheerio.load(data.contents);
+      // HTMLパーサーのcheerioを使って、h1~h3を抽出
       const headings = $('h1, h2, h3').toArray();
       const toc = headings.map((d) => {
         return {
+          // 配列形式で取得したh1~h3を、整形してテキスト・ID・タグ名の配列に書き換える
           text: d.children[0].data,
           id: d.attribs.id,
           name: d.name,

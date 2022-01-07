@@ -1,4 +1,5 @@
 <template>
+  <!-- 共通ヘッダー用のコンポーネント -->
   <header class="header">
     <nuxt-link class="header-logo p-4" to="/">
       <img src="../assets/images/mifa_logo.svg" alt="mifa tokyo">
@@ -26,4 +27,5 @@
       </nuxt-link>
     </nav>
   </header>
+  <!-- // 共通ヘッダー用のコンポーネント -->
 </template>

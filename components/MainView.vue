@@ -9,20 +9,6 @@
       </div>
     </div>
     <div class="mainview-image">
-      <!-- <figure>
-        <img src="~@/assets/images/front/slide3.jpg" alt="">
-      </figure> -->
-      <!-- <swiper :options="swiperOption">
-        <swiper-slide>
-          <img src="~@/assets/images/front/slide1.jpg" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="~@/assets/images/front/slide2.jpg" alt="">
-        </swiper-slide>
-        <swiper-slide>
-          <img src="~@/assets/images/front/slide3.jpg" alt="">
-        </swiper-slide>
-      </swiper> -->
       <span class="ball _skew"></span>
       <span class="ball _skewres"></span>
       <span class="ball _blur _gd8"></span>
@@ -41,16 +27,7 @@
 export default {
   data() {
     return {
-      // swiperOption: {
-      //   autoplay: {
-      //     delay: 2500,
-      //     disableOnInteraction: false,
-      //   },
-      //   slidesPerView: 1,
-      //   loop: true,
-      //   effect: "fade",
-      //   speed: 2000,
-      // },
+
     }
   },
 }

@@ -1,5 +1,5 @@
 <template>
-
+  <!-- 共通フッター -->
   <footer class="footer">
     <!-- Waves Container -->
     <div>
@@ -26,4 +26,5 @@
       </p>
     </div>
   </footer>
+  <!-- // 共通フッター -->
 </template>
