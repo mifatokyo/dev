@@ -15,7 +15,7 @@
           <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Works">WORKS</h2>
         </div>
         <Works/>
-        <nuxt-link to="/works/" class="button trans">
+        <nuxt-link to="/works" class="button trans">
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>
@@ -26,7 +26,7 @@
         <h2 class="front-headline2 md:text-7xl text-5xl leading-loose" data-text="Concept">CONCEPT</h2>
       </div>
       <Service/>
-      <nuxt-link to="/service/" class="button trans">
+      <nuxt-link to="/service" class="button trans">
         <span>SERVICE</span><em></em>
       </nuxt-link>
     </section>
@@ -52,7 +52,7 @@
             </nuxt-link>
           </li>
         </ul>
-        <nuxt-link to="/blog/" class="button trans">
+        <nuxt-link to="/blog" class="button trans">
           <span>VIEW ALL</span><em></em>
         </nuxt-link>
       </section>

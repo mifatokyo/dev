@@ -17,7 +17,7 @@
       </section>
       <ul class="blog-list grid md:gap-5 gap-10 grid-cols-1 md:grid-cols-3 p-4">
         <li v-for="content in contents" :key="content.id" class="blog-item">
-          <nuxt-link :to="`/blog/${content.id}/`">
+          <nuxt-link :to="`/blog/${content.id}`">
             <div class="post-image">
               <span class="text-white text-xs font-semibold category sample">{{ content.category.name }}</span>
               <picture>
