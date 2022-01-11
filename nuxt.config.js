@@ -210,7 +210,7 @@ export default {
     fallback: true,
   },
   router: {
-    trailingSlash: true,
+    trailingSlash: false,
     extendRoutes (routes, resolve) {
       routes.push({
         name: 'custom',
