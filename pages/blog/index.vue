@@ -62,11 +62,12 @@
       Header,
       Footer,
     },
-    async asyncData({$config}) {
+    async asyncData() {
+      // microCMSからの記事取得
       const { data } = await axios.get(
         'https://mifatokyo.microcms.io/api/v1/post',
         {
-          headers: { 'X-API-KEY': $config.apiKey }
+          headers: { 'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75' }
         }
       )
       return data
