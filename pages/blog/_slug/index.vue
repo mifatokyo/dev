@@ -102,11 +102,11 @@ export default {
         headers: {
           'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75'
         },
-        endpoint: 'post',
-        contentId: params.slug,
-        queries: {
-          draftKey: $preview?.draftKey
-        },
+        // endpoint: 'post',
+        // contentId: params.slug,
+        // queries: {
+        //   draftKey: $preview?.draftKey
+        // },
       });
       const links = await axios.get(
         `https://mifatokyo.microcms.io/api/v1/post/?limit=100&fields=id,title,`,
