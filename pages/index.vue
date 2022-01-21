@@ -69,6 +69,7 @@
 </template>
 
 <script>
+// HTTP通信で、JSONデータを取得するためのライブラリ
   import axios from 'axios';
   import Header from "@/components/SiteHeader.vue";
   import Footer from "@/components/SiteFooter.vue";
@@ -88,8 +89,11 @@
       Service,
       Contact,
 		},
+    // - microCMSからの記事取得 -
+
+    // asyncDataは、pageコンポーネントへデータを直接セットする際に使う関数。
+    // apiを叩いてデータを取得する場合に使います。
     async asyncData() {
-      // microCMSからの記事取得
       const { data } = await axios.get(
         'https://mifatokyo.microcms.io/api/v1/post',
         {
@@ -98,6 +102,7 @@
       )
       return data
     },
+    // head内のmeta要素用のデータオブジェクト
     head() {
       return {
         title: 'Webデザイナー mifa.tokyo',

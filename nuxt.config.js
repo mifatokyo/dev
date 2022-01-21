@@ -2,14 +2,14 @@ import axios from 'axios';
 require("dotenv").config();
 const { API_KEY,SERVICE_ID } = process.env;
 export default {
-  // privateRuntimeConfig: {
-  //   apiKey: API_KEY,
-  //   serviceDomain: SERVICE_ID,
+  privateRuntimeConfig: {
+    apiKey: API_KEY,
+    serviceDomain: SERVICE_ID,
 
-  // },
-  // publicRuntimeConfig: {
-  //   apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined
-  // },
+  },
+  publicRuntimeConfig: {
+    apiKey: process.env.NODE_ENV !== 'production' ? API_KEY : undefined
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -61,6 +61,7 @@ export default {
   plugins: [
     // '~/plugins/vee-validate',
     // { src: '~/plugins/swiper', mode: 'client' },
+    '~/plugins/preview.client.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -210,7 +211,8 @@ export default {
     fallback: true,
   },
   router: {
-    trailingSlash: false,
+    // middleware: 'redirect',
+    trailingSlash: false, // トレイリングスラッシュの有無
     extendRoutes (routes, resolve) {
       routes.push({
         name: 'custom',

@@ -85,21 +85,27 @@
   import 'highlight.js/styles/github-dark.css';
   // シンタックスハイライトのテーマを変更したい時はここで→→→ https://highlightjs.org/static/demo/
 
+// そのファイルのデフォルトとして後ろに続くものをexportするよ
 export default {
   components:{
     Header,
     Footer,
     Toc,
   },
-
-  async asyncData({ params, error }) {
+  // 非同期通信モードで取得するデータの記述
+  async asyncData({ params,$microcms, error,$preview }) {
     try {
 
-      const { data } = await axios.get(
+      const { data } = await {axios,$microcms}.get(
       `https://mifatokyo.microcms.io/api/v1/post/${params.slug}`,
         {
         headers: {
           'X-API-KEY': '4eb0c6b2-fc5d-41d3-af15-b4c6ff975c75'
+        },
+        endpoint: 'post',
+        contentId: params.slug,
+        queries: {
+          draftKey: $preview?.draftKey
         },
       });
       const links = await axios.get(
@@ -147,6 +153,7 @@ export default {
       ogimage: null,
     };
   },
+
   head() {
     return {
       title: this.title  ,
