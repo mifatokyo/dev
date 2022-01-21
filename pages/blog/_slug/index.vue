@@ -93,10 +93,10 @@ export default {
     Toc,
   },
   // 非同期通信モードで取得するデータの記述
-  async asyncData({ params,$microcms, error,$preview }) {
+  async asyncData({ params, error }) {
     try {
 
-      const { data } = await {axios,$microcms}.get(
+      const { data } = await axios.get(
       `https://mifatokyo.microcms.io/api/v1/post/${params.slug}`,
         {
         headers: {
